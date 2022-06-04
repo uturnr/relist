@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF18AC29284A32E8000FA842 /* TaskEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF18AC28284A32E8000FA842 /* TaskEditorView.swift */; };
+		FF18AC2A284A32E8000FA842 /* TaskEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF18AC28284A32E8000FA842 /* TaskEditorView.swift */; };
+		FF1D0D862844331200C710B1 /* ListEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D0D852844331200C710B1 /* ListEditorView.swift */; };
+		FF1D0D872844331200C710B1 /* ListEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D0D852844331200C710B1 /* ListEditorView.swift */; };
+		FF4E237A2843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23762843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift */; };
+		FF4E237B2843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23762843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift */; };
+		FF4E237E2843CFBD0028EF88 /* RoutineList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23782843CFBD0028EF88 /* RoutineList+CoreDataClass.swift */; };
+		FF4E237F2843CFBD0028EF88 /* RoutineList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23782843CFBD0028EF88 /* RoutineList+CoreDataClass.swift */; };
+		FF4E23802843CFBD0028EF88 /* RoutineList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23792843CFBD0028EF88 /* RoutineList+CoreDataProperties.swift */; };
+		FF4E23812843CFBD0028EF88 /* RoutineList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23792843CFBD0028EF88 /* RoutineList+CoreDataProperties.swift */; };
+		FF668078282D2FCD00C52CCE /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF668077282D2FCD00C52CCE /* TasksView.swift */; };
+		FF668079282D2FCD00C52CCE /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF668077282D2FCD00C52CCE /* TasksView.swift */; };
+		FF66807B282D30A300C52CCE /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF66807A282D30A300C52CCE /* IDETemplateMacros.plist */; };
+		FF66807C282D30A300C52CCE /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF66807A282D30A300C52CCE /* IDETemplateMacros.plist */; };
 		FFF3A2A42823EE550088DD67 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A2A32823EE550088DD67 /* Tests_iOS.swift */; };
 		FFF3A2A62823EE550088DD67 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A2A52823EE550088DD67 /* Tests_iOSLaunchTests.swift */; };
 		FFF3A2B02823EE550088DD67 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A2AF2823EE550088DD67 /* Tests_macOS.swift */; };
@@ -15,8 +29,8 @@
 		FFF3A2B42823EE550088DD67 /* Relist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A2882823EE530088DD67 /* Relist.xcdatamodeld */; };
 		FFF3A2B52823EE550088DD67 /* RelistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A28A2823EE530088DD67 /* RelistApp.swift */; };
 		FFF3A2B62823EE550088DD67 /* RelistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A28A2823EE530088DD67 /* RelistApp.swift */; };
-		FFF3A2B72823EE550088DD67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A28B2823EE530088DD67 /* ContentView.swift */; };
-		FFF3A2B82823EE550088DD67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A28B2823EE530088DD67 /* ContentView.swift */; };
+		FFF3A2B72823EE550088DD67 /* ListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A28B2823EE530088DD67 /* ListsView.swift */; };
+		FFF3A2B82823EE550088DD67 /* ListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A28B2823EE530088DD67 /* ListsView.swift */; };
 		FFF3A2B92823EE550088DD67 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A28C2823EE530088DD67 /* Persistence.swift */; };
 		FFF3A2BA2823EE550088DD67 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A28C2823EE530088DD67 /* Persistence.swift */; };
 		FFF3A2BB2823EE550088DD67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF3A28D2823EE550088DD67 /* Assets.xcassets */; };
@@ -41,9 +55,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF18AC28284A32E8000FA842 /* TaskEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskEditorView.swift; sourceTree = "<group>"; };
+		FF1D0D852844331200C710B1 /* ListEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEditorView.swift; sourceTree = "<group>"; };
+		FF4E23762843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutineTask+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FF4E23782843CFBD0028EF88 /* RoutineList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutineList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FF4E23792843CFBD0028EF88 /* RoutineList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutineList+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FF668077282D2FCD00C52CCE /* TasksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
+		FF66807A282D30A300C52CCE /* IDETemplateMacros.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = IDETemplateMacros.plist; sourceTree = "<group>"; };
 		FFF3A2892823EE530088DD67 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		FFF3A28A2823EE530088DD67 /* RelistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelistApp.swift; sourceTree = "<group>"; };
-		FFF3A28B2823EE530088DD67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FFF3A28B2823EE530088DD67 /* ListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsView.swift; sourceTree = "<group>"; };
 		FFF3A28C2823EE530088DD67 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		FFF3A28D2823EE550088DD67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFF3A2922823EE550088DD67 /* Relist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Relist.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,9 +110,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF4E23752843CD090028EF88 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF4E23762843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift */,
+				FF4E23782843CFBD0028EF88 /* RoutineList+CoreDataClass.swift */,
+				FF4E23792843CFBD0028EF88 /* RoutineList+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FFF3A2822823EE520088DD67 = {
 			isa = PBXGroup;
 			children = (
+				FF66807A282D30A300C52CCE /* IDETemplateMacros.plist */,
 				FFF3A2872823EE520088DD67 /* Shared */,
 				FFF3A2992823EE550088DD67 /* macOS */,
 				FFF3A2A22823EE550088DD67 /* Tests iOS */,
@@ -103,8 +135,12 @@
 		FFF3A2872823EE520088DD67 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				FF4E23752843CD090028EF88 /* Model */,
 				FFF3A28A2823EE530088DD67 /* RelistApp.swift */,
-				FFF3A28B2823EE530088DD67 /* ContentView.swift */,
+				FFF3A28B2823EE530088DD67 /* ListsView.swift */,
+				FF1D0D852844331200C710B1 /* ListEditorView.swift */,
+				FF18AC28284A32E8000FA842 /* TaskEditorView.swift */,
+				FF668077282D2FCD00C52CCE /* TasksView.swift */,
 				FFF3A28C2823EE530088DD67 /* Persistence.swift */,
 				FFF3A28D2823EE550088DD67 /* Assets.xcassets */,
 				FFF3A2882823EE530088DD67 /* Relist.xcdatamodeld */,
@@ -274,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF66807B282D30A300C52CCE /* IDETemplateMacros.plist in Resources */,
 				FFF3A2BB2823EE550088DD67 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +319,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF66807C282D30A300C52CCE /* IDETemplateMacros.plist in Resources */,
 				FFF3A2BC2823EE550088DD67 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,10 +345,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF18AC29284A32E8000FA842 /* TaskEditorView.swift in Sources */,
+				FF4E237E2843CFBD0028EF88 /* RoutineList+CoreDataClass.swift in Sources */,
 				FFF3A2B52823EE550088DD67 /* RelistApp.swift in Sources */,
+				FF4E23802843CFBD0028EF88 /* RoutineList+CoreDataProperties.swift in Sources */,
+				FF4E237A2843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift in Sources */,
 				FFF3A2B92823EE550088DD67 /* Persistence.swift in Sources */,
+				FF668078282D2FCD00C52CCE /* TasksView.swift in Sources */,
 				FFF3A2B32823EE550088DD67 /* Relist.xcdatamodeld in Sources */,
-				FFF3A2B72823EE550088DD67 /* ContentView.swift in Sources */,
+				FFF3A2B72823EE550088DD67 /* ListsView.swift in Sources */,
+				FF1D0D862844331200C710B1 /* ListEditorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,10 +362,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF18AC2A284A32E8000FA842 /* TaskEditorView.swift in Sources */,
+				FF4E237F2843CFBD0028EF88 /* RoutineList+CoreDataClass.swift in Sources */,
 				FFF3A2B62823EE550088DD67 /* RelistApp.swift in Sources */,
+				FF4E23812843CFBD0028EF88 /* RoutineList+CoreDataProperties.swift in Sources */,
+				FF4E237B2843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift in Sources */,
 				FFF3A2BA2823EE550088DD67 /* Persistence.swift in Sources */,
+				FF668079282D2FCD00C52CCE /* TasksView.swift in Sources */,
 				FFF3A2B42823EE550088DD67 /* Relist.xcdatamodeld in Sources */,
-				FFF3A2B82823EE550088DD67 /* ContentView.swift in Sources */,
+				FFF3A2B82823EE550088DD67 /* ListsView.swift in Sources */,
+				FF1D0D872844331200C710B1 /* ListEditorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
