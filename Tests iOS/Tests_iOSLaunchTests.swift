@@ -2,7 +2,7 @@
 //  Tests_iOSLaunchTests.swift
 //  Tests iOS
 //
-//  Created by Cody Cody on 2022-05-05.
+//  Created by uturnr on 2022-05-05.
 //
 
 import XCTest
