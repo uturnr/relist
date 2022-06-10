@@ -20,9 +20,8 @@ struct TasksView: View {
   ) -> NSFetchRequest<RoutineTask> {
     let request: NSFetchRequest<RoutineTask> = RoutineTask.fetchRequest()
     request.predicate = NSPredicate(format: "list == %@", list)
-    // TODO: sort by order weight
     request.sortDescriptors = [
-      NSSortDescriptor(keyPath: \RoutineTask.createdDate, ascending: true)
+      NSSortDescriptor(keyPath: \RoutineTask.orderIndex, ascending: true)
     ]
     
     return request
@@ -50,11 +49,12 @@ struct TasksView: View {
         }) {
           HStack {
             Text("\(task.checked ? "☑️" : "")")
-            Text("\(task.createdDate, formatter: itemFormatter) - \(task.name)")
+            Text("\(task.orderIndex) - \(task.name)")
           }
         }
       }
       .onDelete(perform: deleteTasks)
+      .onMove(perform: moveTask)
     }
     .listRowBackground(Ellipse()
       .background(Color.clear)
@@ -83,11 +83,85 @@ struct TasksView: View {
     addTaskViewOpen = true
   }
   
+  private func reorderAllTasks() {
+    for (index, task) in tasks.enumerated() {
+      task.orderIndex = Int64(index)
+    }
+  }
+  
+  private func moveTask(sets: IndexSet, destination: Int) {
+    // TODO: ensure ordering works with hidden/filtered tasks.
+
+    // First, reorder all tasks in case they somehow lost valid ordering.
+    reorderAllTasks()
+
+    enum Direction {
+      case down
+      case up
+      case unmoved
+    }
+    
+    let movedTaskIndex = sets.first!
+    
+    let direction: Direction
+
+    if (movedTaskIndex == destination) {
+      direction = .unmoved
+    } else if (movedTaskIndex < destination) {
+      direction = .down
+    } else if (movedTaskIndex > destination) {
+      direction = .up
+    } else {
+      fatalError("Impossible move")
+    }
+    
+    if direction == .unmoved {
+      return
+    }
+    
+    let movedTask = tasks[movedTaskIndex]
+    let destinationForMovedTask = direction == .down
+      ? Int64(destination) - 1
+      : Int64(destination)
+    
+    // Move moved task
+    movedTask.orderIndex = destinationForMovedTask
+    
+    /// First index in other tasks to reorder
+    let startIndex = direction == .down
+      ? movedTaskIndex + 1
+      : destination
+    /// Last index in other tasks to reorder
+    let endIndex = direction == .down
+      ? destination - 1
+      : movedTaskIndex - 1
+
+    let adjustment: Int64 = direction == .down ? -1 : 1
+    
+    // Move other tasks
+    for indexInList in startIndex...endIndex {
+      let currentTask = tasks[indexInList]
+      let newOrderIndex = currentTask.orderIndex + adjustment
+      currentTask.orderIndex = newOrderIndex
+    }
+    
+    do {
+      try viewContext.save()
+    } catch {
+      // Replace this implementation with code to handle the error appropriately.
+      // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+      let nsError = error as NSError
+      fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+    }
+  }
+  
   private func deleteTasks(offsets: IndexSet) {
     withAnimation {
       offsets.map { tasks[$0] }.forEach(viewContext.delete)
       
       do {
+        try viewContext.save()
+        reorderAllTasks()
         try viewContext.save()
       } catch {
         // Replace this implementation with code to handle the error appropriately.
@@ -113,13 +187,6 @@ struct TasksView: View {
     }
   }
 }
-
-private let itemFormatter: DateFormatter = {
-  let formatter = DateFormatter()
-  formatter.dateStyle = .short
-  formatter.timeStyle = .medium
-  return formatter
-}()
 
 struct TasksView_Previews: PreviewProvider {
   // TODO: use mock data from Persistence.swift

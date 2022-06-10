@@ -8,9 +8,13 @@
 import SwiftUI
 import CoreData
 
+// TODO: broaden support (set due to @FocusState)
+@available(iOS 15, *)
 struct TaskEditorView: View {
   @Environment(\.managedObjectContext) private var viewContext
   @Environment(\.presentationMode) var presentationMode
+  
+  @FocusState var nameFieldFocused: Bool
   
   var list: RoutineList
   
@@ -21,24 +25,41 @@ struct TaskEditorView: View {
       Form {
         Section {
           TextField("Name", text: $name)
+            .focused($nameFieldFocused, equals: true)
+            .onAppear {
+              DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+                self.nameFieldFocused = true
+              }
+            }
+            .onSubmit {
+              self.addTask()
+            }
         }
         
         Button("Add Task") {
-          self.addTask(name: self.name)
+          self.addTask()
         }
+        
       }
       #if os(iOS)
         .navigationBarTitle("New Task")
       #endif
     }
+
   }
   
-  private func addTask(name: String) {
+  private func addTask() {
     withAnimation {
+      // Bump all tasks’ orderIndex
+      for case let task as RoutineTask in list.tasks  {
+        task.orderIndex += 1
+      }
+      
+      // Place the new task at the first orderIndex
       let _ = RoutineTask(
         context: viewContext,
         list: list,
-        name: name,
+        name: self.name,
         orderIndex: 0
       )
       
