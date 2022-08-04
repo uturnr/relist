@@ -11,6 +11,10 @@
 		FF18AC2A284A32E8000FA842 /* TaskEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF18AC28284A32E8000FA842 /* TaskEditorView.swift */; };
 		FF1D0D862844331200C710B1 /* ListEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D0D852844331200C710B1 /* ListEditorView.swift */; };
 		FF1D0D872844331200C710B1 /* ListEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D0D852844331200C710B1 /* ListEditorView.swift */; };
+		FF317E3C286C7E3300DC2335 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */; };
+		FF317E3D286C7E3300DC2335 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */; };
+		FF317E3E286C7E3300DC2335 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */; };
+		FF317E3F286C7E3300DC2335 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */; };
 		FF4E237A2843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23762843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift */; };
 		FF4E237B2843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23762843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift */; };
 		FF4E237E2843CFBD0028EF88 /* RoutineList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23782843CFBD0028EF88 /* RoutineList+CoreDataClass.swift */; };
@@ -21,6 +25,38 @@
 		FF668079282D2FCD00C52CCE /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF668077282D2FCD00C52CCE /* TasksView.swift */; };
 		FF66807B282D30A300C52CCE /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF66807A282D30A300C52CCE /* IDETemplateMacros.plist */; };
 		FF66807C282D30A300C52CCE /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF66807A282D30A300C52CCE /* IDETemplateMacros.plist */; };
+		FF8B8EF5285E240A0033C4BD /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B8EF4285E240A0033C4BD /* ListItemView.swift */; };
+		FF8B8EF6285E240A0033C4BD /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B8EF4285E240A0033C4BD /* ListItemView.swift */; };
+		FF8B8EF7285E240A0033C4BD /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B8EF4285E240A0033C4BD /* ListItemView.swift */; };
+		FF8B8EF8285E240A0033C4BD /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B8EF4285E240A0033C4BD /* ListItemView.swift */; };
+		FFE726E528575C770018B9D7 /* TaskEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF18AC28284A32E8000FA842 /* TaskEditorView.swift */; };
+		FFE726E628575C770018B9D7 /* RoutineList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23782843CFBD0028EF88 /* RoutineList+CoreDataClass.swift */; };
+		FFE726E728575C770018B9D7 /* RelistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A28A2823EE530088DD67 /* RelistApp.swift */; };
+		FFE726E828575C770018B9D7 /* RoutineList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23792843CFBD0028EF88 /* RoutineList+CoreDataProperties.swift */; };
+		FFE726E928575C770018B9D7 /* RoutineTask+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23762843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift */; };
+		FFE726EA28575C770018B9D7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A28C2823EE530088DD67 /* Persistence.swift */; };
+		FFE726EB28575C770018B9D7 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF668077282D2FCD00C52CCE /* TasksView.swift */; };
+		FFE726EC28575C770018B9D7 /* Relist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A2882823EE530088DD67 /* Relist.xcdatamodeld */; };
+		FFE726ED28575C770018B9D7 /* ListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A28B2823EE530088DD67 /* ListsView.swift */; };
+		FFE726EE28575C770018B9D7 /* ListEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D0D852844331200C710B1 /* ListEditorView.swift */; };
+		FFE726F028575C770018B9D7 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFEE8F002854BA21009CF365 /* CloudKit.framework */; };
+		FFE726F228575C770018B9D7 /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF66807A282D30A300C52CCE /* IDETemplateMacros.plist */; };
+		FFE726F328575C770018B9D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF3A28D2823EE550088DD67 /* Assets.xcassets */; };
+		FFE726FB28575E260018B9D7 /* TaskEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF18AC28284A32E8000FA842 /* TaskEditorView.swift */; };
+		FFE726FC28575E260018B9D7 /* RoutineList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23782843CFBD0028EF88 /* RoutineList+CoreDataClass.swift */; };
+		FFE726FD28575E260018B9D7 /* RelistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A28A2823EE530088DD67 /* RelistApp.swift */; };
+		FFE726FE28575E260018B9D7 /* RoutineList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23792843CFBD0028EF88 /* RoutineList+CoreDataProperties.swift */; };
+		FFE726FF28575E260018B9D7 /* RoutineTask+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23762843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift */; };
+		FFE7270028575E260018B9D7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A28C2823EE530088DD67 /* Persistence.swift */; };
+		FFE7270128575E260018B9D7 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF668077282D2FCD00C52CCE /* TasksView.swift */; };
+		FFE7270228575E260018B9D7 /* Relist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A2882823EE530088DD67 /* Relist.xcdatamodeld */; };
+		FFE7270328575E260018B9D7 /* ListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A28B2823EE530088DD67 /* ListsView.swift */; };
+		FFE7270428575E260018B9D7 /* ListEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D0D852844331200C710B1 /* ListEditorView.swift */; };
+		FFE7270628575E260018B9D7 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFEE8F022854BAA5009CF365 /* CloudKit.framework */; };
+		FFE7270828575E260018B9D7 /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF66807A282D30A300C52CCE /* IDETemplateMacros.plist */; };
+		FFE7270928575E260018B9D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF3A28D2823EE550088DD67 /* Assets.xcassets */; };
+		FFEE8F012854BA21009CF365 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFEE8F002854BA21009CF365 /* CloudKit.framework */; };
+		FFEE8F032854BAA5009CF365 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFEE8F022854BAA5009CF365 /* CloudKit.framework */; };
 		FFF3A2A42823EE550088DD67 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A2A32823EE550088DD67 /* Tests_iOS.swift */; };
 		FFF3A2A62823EE550088DD67 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A2A52823EE550088DD67 /* Tests_iOSLaunchTests.swift */; };
 		FFF3A2B02823EE550088DD67 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A2AF2823EE550088DD67 /* Tests_macOS.swift */; };
@@ -57,11 +93,20 @@
 /* Begin PBXFileReference section */
 		FF18AC28284A32E8000FA842 /* TaskEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskEditorView.swift; sourceTree = "<group>"; };
 		FF1D0D852844331200C710B1 /* ListEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEditorView.swift; sourceTree = "<group>"; };
+		FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		FF4E23762843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutineTask+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FF4E23782843CFBD0028EF88 /* RoutineList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutineList+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FF4E23792843CFBD0028EF88 /* RoutineList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutineList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FF668077282D2FCD00C52CCE /* TasksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
 		FF66807A282D30A300C52CCE /* IDETemplateMacros.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = IDETemplateMacros.plist; sourceTree = "<group>"; };
+		FF8B8EF4285E240A0033C4BD /* ListItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		FFE726F728575C770018B9D7 /* Relist Beta (iOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Relist Beta (iOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFE726F828575C770018B9D7 /* Relist Beta (iOS)-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Relist Beta (iOS)-Info.plist"; path = "/Users/codycody/uturnr/relist/Relist Beta (iOS)-Info.plist"; sourceTree = "<absolute>"; };
+		FFE7270D28575E260018B9D7 /* Relist Beta (macOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Relist Beta (macOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFEE8EFE2854BA17009CF365 /* Relist (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Relist (iOS).entitlements"; sourceTree = "<group>"; };
+		FFEE8F002854BA21009CF365 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		FFEE8F022854BAA5009CF365 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		FFEE8F042854BACE009CF365 /* Relist--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Relist--iOS--Info.plist"; sourceTree = "<group>"; };
 		FFF3A2892823EE530088DD67 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		FFF3A28A2823EE530088DD67 /* RelistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelistApp.swift; sourceTree = "<group>"; };
 		FFF3A28B2823EE530088DD67 /* ListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsView.swift; sourceTree = "<group>"; };
@@ -79,10 +124,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FFE726EF28575C770018B9D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE726F028575C770018B9D7 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE7270528575E260018B9D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE7270628575E260018B9D7 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FFF3A28F2823EE550088DD67 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFEE8F012854BA21009CF365 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFEE8F032854BAA5009CF365 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,15 +183,28 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		FFEE8EFF2854BA21009CF365 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFEE8F022854BAA5009CF365 /* CloudKit.framework */,
+				FFEE8F002854BA21009CF365 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FFF3A2822823EE520088DD67 = {
 			isa = PBXGroup;
 			children = (
+				FFEE8F042854BACE009CF365 /* Relist--iOS--Info.plist */,
+				FFEE8EFE2854BA17009CF365 /* Relist (iOS).entitlements */,
 				FF66807A282D30A300C52CCE /* IDETemplateMacros.plist */,
 				FFF3A2872823EE520088DD67 /* Shared */,
 				FFF3A2992823EE550088DD67 /* macOS */,
 				FFF3A2A22823EE550088DD67 /* Tests iOS */,
 				FFF3A2AE2823EE550088DD67 /* Tests macOS */,
 				FFF3A2932823EE550088DD67 /* Products */,
+				FFEE8EFF2854BA21009CF365 /* Frameworks */,
+				FFE726F828575C770018B9D7 /* Relist Beta (iOS)-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +214,8 @@
 				FF4E23752843CD090028EF88 /* Model */,
 				FFF3A28A2823EE530088DD67 /* RelistApp.swift */,
 				FFF3A28B2823EE530088DD67 /* ListsView.swift */,
+				FF8B8EF4285E240A0033C4BD /* ListItemView.swift */,
+				FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */,
 				FF1D0D852844331200C710B1 /* ListEditorView.swift */,
 				FF18AC28284A32E8000FA842 /* TaskEditorView.swift */,
 				FF668077282D2FCD00C52CCE /* TasksView.swift */,
@@ -155,6 +233,8 @@
 				FFF3A2982823EE550088DD67 /* Relist.app */,
 				FFF3A29F2823EE550088DD67 /* Tests iOS.xctest */,
 				FFF3A2AB2823EE550088DD67 /* Tests macOS.xctest */,
+				FFE726F728575C770018B9D7 /* Relist Beta (iOS).app */,
+				FFE7270D28575E260018B9D7 /* Relist Beta (macOS).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,6 +268,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FFE726E328575C770018B9D7 /* Relist Beta (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFE726F428575C770018B9D7 /* Build configuration list for PBXNativeTarget "Relist Beta (iOS)" */;
+			buildPhases = (
+				FFE726E428575C770018B9D7 /* Sources */,
+				FFE726EF28575C770018B9D7 /* Frameworks */,
+				FFE726F128575C770018B9D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Relist Beta (iOS)";
+			productName = "Relist (iOS)";
+			productReference = FFE726F728575C770018B9D7 /* Relist Beta (iOS).app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFE726F928575E260018B9D7 /* Relist Beta (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFE7270A28575E260018B9D7 /* Build configuration list for PBXNativeTarget "Relist Beta (macOS)" */;
+			buildPhases = (
+				FFE726FA28575E260018B9D7 /* Sources */,
+				FFE7270528575E260018B9D7 /* Frameworks */,
+				FFE7270728575E260018B9D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Relist Beta (macOS)";
+			productName = "Relist (macOS)";
+			productReference = FFE7270D28575E260018B9D7 /* Relist Beta (macOS).app */;
+			productType = "com.apple.product-type.application";
+		};
 		FFF3A2912823EE550088DD67 /* Relist (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFF3A2BF2823EE550088DD67 /* Build configuration list for PBXNativeTarget "Relist (iOS)" */;
@@ -266,7 +380,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					FFF3A2912823EE550088DD67 = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -301,11 +415,31 @@
 				FFF3A2972823EE550088DD67 /* Relist (macOS) */,
 				FFF3A29E2823EE550088DD67 /* Tests iOS */,
 				FFF3A2AA2823EE550088DD67 /* Tests macOS */,
+				FFE726E328575C770018B9D7 /* Relist Beta (iOS) */,
+				FFE726F928575E260018B9D7 /* Relist Beta (macOS) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FFE726F128575C770018B9D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE726F228575C770018B9D7 /* IDETemplateMacros.plist in Resources */,
+				FFE726F328575C770018B9D7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE7270728575E260018B9D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE7270828575E260018B9D7 /* IDETemplateMacros.plist in Resources */,
+				FFE7270928575E260018B9D7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FFF3A2902823EE550088DD67 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -341,6 +475,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FFE726E428575C770018B9D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE726E528575C770018B9D7 /* TaskEditorView.swift in Sources */,
+				FFE726E628575C770018B9D7 /* RoutineList+CoreDataClass.swift in Sources */,
+				FFE726E728575C770018B9D7 /* RelistApp.swift in Sources */,
+				FF8B8EF7285E240A0033C4BD /* ListItemView.swift in Sources */,
+				FFE726E828575C770018B9D7 /* RoutineList+CoreDataProperties.swift in Sources */,
+				FFE726E928575C770018B9D7 /* RoutineTask+CoreDataClass.swift in Sources */,
+				FFE726EA28575C770018B9D7 /* Persistence.swift in Sources */,
+				FFE726EB28575C770018B9D7 /* TasksView.swift in Sources */,
+				FFE726EC28575C770018B9D7 /* Relist.xcdatamodeld in Sources */,
+				FFE726ED28575C770018B9D7 /* ListsView.swift in Sources */,
+				FF317E3E286C7E3300DC2335 /* CircularProgressView.swift in Sources */,
+				FFE726EE28575C770018B9D7 /* ListEditorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE726FA28575E260018B9D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE726FB28575E260018B9D7 /* TaskEditorView.swift in Sources */,
+				FFE726FC28575E260018B9D7 /* RoutineList+CoreDataClass.swift in Sources */,
+				FFE726FD28575E260018B9D7 /* RelistApp.swift in Sources */,
+				FF8B8EF8285E240A0033C4BD /* ListItemView.swift in Sources */,
+				FFE726FE28575E260018B9D7 /* RoutineList+CoreDataProperties.swift in Sources */,
+				FFE726FF28575E260018B9D7 /* RoutineTask+CoreDataClass.swift in Sources */,
+				FFE7270028575E260018B9D7 /* Persistence.swift in Sources */,
+				FFE7270128575E260018B9D7 /* TasksView.swift in Sources */,
+				FFE7270228575E260018B9D7 /* Relist.xcdatamodeld in Sources */,
+				FFE7270328575E260018B9D7 /* ListsView.swift in Sources */,
+				FF317E3F286C7E3300DC2335 /* CircularProgressView.swift in Sources */,
+				FFE7270428575E260018B9D7 /* ListEditorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FFF3A28E2823EE550088DD67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,12 +520,14 @@
 				FF18AC29284A32E8000FA842 /* TaskEditorView.swift in Sources */,
 				FF4E237E2843CFBD0028EF88 /* RoutineList+CoreDataClass.swift in Sources */,
 				FFF3A2B52823EE550088DD67 /* RelistApp.swift in Sources */,
+				FF8B8EF5285E240A0033C4BD /* ListItemView.swift in Sources */,
 				FF4E23802843CFBD0028EF88 /* RoutineList+CoreDataProperties.swift in Sources */,
 				FF4E237A2843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift in Sources */,
 				FFF3A2B92823EE550088DD67 /* Persistence.swift in Sources */,
 				FF668078282D2FCD00C52CCE /* TasksView.swift in Sources */,
 				FFF3A2B32823EE550088DD67 /* Relist.xcdatamodeld in Sources */,
 				FFF3A2B72823EE550088DD67 /* ListsView.swift in Sources */,
+				FF317E3C286C7E3300DC2335 /* CircularProgressView.swift in Sources */,
 				FF1D0D862844331200C710B1 /* ListEditorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,12 +539,14 @@
 				FF18AC2A284A32E8000FA842 /* TaskEditorView.swift in Sources */,
 				FF4E237F2843CFBD0028EF88 /* RoutineList+CoreDataClass.swift in Sources */,
 				FFF3A2B62823EE550088DD67 /* RelistApp.swift in Sources */,
+				FF8B8EF6285E240A0033C4BD /* ListItemView.swift in Sources */,
 				FF4E23812843CFBD0028EF88 /* RoutineList+CoreDataProperties.swift in Sources */,
 				FF4E237B2843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift in Sources */,
 				FFF3A2BA2823EE550088DD67 /* Persistence.swift in Sources */,
 				FF668079282D2FCD00C52CCE /* TasksView.swift in Sources */,
 				FFF3A2B42823EE550088DD67 /* Relist.xcdatamodeld in Sources */,
 				FFF3A2B82823EE550088DD67 /* ListsView.swift in Sources */,
+				FF317E3D286C7E3300DC2335 /* CircularProgressView.swift in Sources */,
 				FF1D0D872844331200C710B1 /* ListEditorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +585,135 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		FFE726F528575C770018B9D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Relist (iOS).entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KLQGJ9XU3B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Relist Beta (iOS)-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Relist Beta";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uturnr.Relist.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFE726F628575C770018B9D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Relist (iOS).entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KLQGJ9XU3B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Relist Beta (iOS)-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Relist Beta";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uturnr.Relist.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFE7270B28575E260018B9D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KLQGJ9XU3B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uturnr.Relist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FFE7270C28575E260018B9D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KLQGJ9XU3B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uturnr.Relist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		FFF3A2BD2823EE550088DD67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -523,11 +828,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Relist (iOS).entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LE39A4G2MZ;
+				DEVELOPMENT_TEAM = KLQGJ9XU3B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Relist--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -538,9 +846,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.uturnr.Relist;
 				PRODUCT_NAME = Relist;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -553,11 +862,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Relist (iOS).entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LE39A4G2MZ;
+				DEVELOPMENT_TEAM = KLQGJ9XU3B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Relist--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -568,9 +880,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.uturnr.Relist;
 				PRODUCT_NAME = Relist;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -585,10 +898,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LE39A4G2MZ;
+				DEVELOPMENT_TEAM = KLQGJ9XU3B;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -598,7 +912,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.uturnr.Relist;
 				PRODUCT_NAME = Relist;
 				SDKROOT = macosx;
@@ -613,10 +927,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LE39A4G2MZ;
+				DEVELOPMENT_TEAM = KLQGJ9XU3B;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -626,7 +941,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.uturnr.Relist;
 				PRODUCT_NAME = Relist;
 				SDKROOT = macosx;
@@ -717,6 +1032,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FFE726F428575C770018B9D7 /* Build configuration list for PBXNativeTarget "Relist Beta (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFE726F528575C770018B9D7 /* Debug */,
+				FFE726F628575C770018B9D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFE7270A28575E260018B9D7 /* Build configuration list for PBXNativeTarget "Relist Beta (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFE7270B28575E260018B9D7 /* Debug */,
+				FFE7270C28575E260018B9D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FFF3A2862823EE520088DD67 /* Build configuration list for PBXProject "Relist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

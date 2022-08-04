@@ -39,6 +39,7 @@ struct TaskEditorView: View {
         Button("Add Task") {
           self.addTask()
         }
+        .keyboardShortcut(.defaultAction)
         
       }
       #if os(iOS)
@@ -62,6 +63,8 @@ struct TaskEditorView: View {
         name: self.name,
         orderIndex: 0
       )
+      
+      list.tasksUpdatedDate = Date.now
       
       do {
         try viewContext.save()

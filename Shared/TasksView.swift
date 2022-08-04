@@ -40,8 +40,6 @@ struct TasksView: View {
   
   var body: some View {
     List {
-      Text(list.name)
-
       ForEach(tasks) { task in
         // TODO: Move to own view
         Button(action: {
@@ -64,13 +62,21 @@ struct TasksView: View {
     .toolbar {
       #if os(iOS)
         ToolbarItem(placement: .navigationBarTrailing) {
+          Button(action: uncheckAllTasks) {
+            Label("Uncheck All", systemImage: "arrow.counterclockwise.circle")
+          }
+        }
+      
+        ToolbarItem(placement: .navigationBarTrailing) {
           EditButton()
         }
       #endif
-      ToolbarItem {
+
+      ToolbarItem() {
         Button(action: showAddTask) {
           Label("Add Task", systemImage: "plus")
         }
+        .keyboardShortcut("n")
         .sheet(isPresented: $addTaskViewOpen) {
           TaskEditorView(list: list)
             .environment(\.managedObjectContext, self.viewContext)
@@ -86,6 +92,22 @@ struct TasksView: View {
   private func reorderAllTasks() {
     for (index, task) in tasks.enumerated() {
       task.orderIndex = Int64(index)
+    }
+  }
+  
+  private func uncheckAllTasks() {
+    for task in tasks {
+      task.checked = false
+    }
+    list.tasksUpdatedDate = Date.now
+    
+    do {
+      try viewContext.save()
+    } catch {
+      // Replace this implementation with code to handle the error appropriately.
+      // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+      let nsError = error as NSError
+      fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
     }
   }
   
@@ -145,6 +167,8 @@ struct TasksView: View {
       currentTask.orderIndex = newOrderIndex
     }
     
+    list.tasksUpdatedDate = Date.now
+    
     do {
       try viewContext.save()
     } catch {
@@ -158,6 +182,7 @@ struct TasksView: View {
   private func deleteTasks(offsets: IndexSet) {
     withAnimation {
       offsets.map { tasks[$0] }.forEach(viewContext.delete)
+      list.tasksUpdatedDate = Date.now
       
       do {
         try viewContext.save()
@@ -175,6 +200,7 @@ struct TasksView: View {
   private func toggleTaskChecked(task: RoutineTask) {
     withAnimation {
       task.checked = !task.checked
+      list.tasksUpdatedDate = Date.now
       
       do {
         try viewContext.save()

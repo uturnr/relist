@@ -16,6 +16,7 @@ public class RoutineList: NSManagedObject, Identifiable {
   }
   
   // MARK: Core Data properties
+
   @NSManaged public private(set) var id: String
   @NSManaged public private(set) var createdDate: Date
   
@@ -24,15 +25,37 @@ public class RoutineList: NSManagedObject, Identifiable {
   /// Matches createdDate on creation
   @NSManaged public var updatedDate: Date
   @NSManaged public var tasks: NSSet
+  /// Matches createdDate on creation. Manually updating every time a change is
+  /// made to child tasks ensures all views render the latest computed data.
+  @NSManaged public var tasksUpdatedDate: Date
+
+  // MARK: Computed Core Data properties
+  // `tasksUpdatedDate` must be updated to ensure all views render the latest
+  // computed data.
+
+  /// The proportion of completed tasks.
+  /// Example: 1 of 2 tasks completed => 0.5
+  @objc dynamic public var taskCompletion: Double {
+    guard let tasks = tasks as? Set<RoutineTask> else {
+      return 0
+    }
+
+    let tasksCount = tasks.count
+    let completedTasksCount = tasks.reduce(0, { total, task in
+      total + (task.checked ? 1 : 0)
+    })
+
+    return Double(completedTasksCount) / Double(tasksCount)
+  }
   
   // MARK: Init override
+
   public init(
     context: NSManagedObjectContext,
     id: String = UUID().uuidString,
     createdDate: Date = Date.now,
     name: String,
     orderIndex: Int64,
-    updatedDate: Date = Date.now,
     tasks: NSSet = NSSet()
   ) {
     let entity = NSEntityDescription.entity(forEntityName: "RoutineList", in: context)!
@@ -41,8 +64,9 @@ public class RoutineList: NSManagedObject, Identifiable {
     self.createdDate = createdDate
     self.name = name
     self.orderIndex = orderIndex
-    // TODO: Not sure if this is a valid way to init tasks
     self.tasks = tasks
+    self.updatedDate = createdDate
+    self.tasksUpdatedDate = createdDate
   }
   
   @objc
