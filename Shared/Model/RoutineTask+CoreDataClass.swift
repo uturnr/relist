@@ -16,6 +16,7 @@ public class RoutineTask: NSManagedObject, Identifiable {
   }
   
   // MARK: Core Data properties
+
   @NSManaged public private(set) var createdDate: Date
   @NSManaged public private(set) var id: String
   
@@ -28,6 +29,7 @@ public class RoutineTask: NSManagedObject, Identifiable {
   @NSManaged public var list: RoutineList
   
   // MARK: Init override
+
   public init(
     context: NSManagedObjectContext,
     id: String = UUID().uuidString,
@@ -35,8 +37,7 @@ public class RoutineTask: NSManagedObject, Identifiable {
     createdDate: Date = Date.now,
     list: RoutineList,
     name: String,
-    orderIndex: Int64,
-    updatedDate: Date = Date.now
+    orderIndex: Int64
   ) {
     let entity = NSEntityDescription.entity(forEntityName: "RoutineTask", in: context)!
     super.init(entity: entity, insertInto: context)
@@ -46,6 +47,7 @@ public class RoutineTask: NSManagedObject, Identifiable {
     self.name = name
     self.orderIndex = orderIndex
     self.list = list
+    self.updatedDate = createdDate
   }
   
   @objc

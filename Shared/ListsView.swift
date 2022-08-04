@@ -14,7 +14,7 @@ struct ListsView: View {
   @State private var addListViewOpen: Bool = false
   
   // Initializing fetch request this way prevents preview crash
-  static var getRoutineListFetchRequest: NSFetchRequest<RoutineList> {
+  static var getRoutineListsFetchRequest: NSFetchRequest<RoutineList> {
     let request: NSFetchRequest<RoutineList> = RoutineList.fetchRequest()
     request.sortDescriptors = [
       NSSortDescriptor(keyPath: \RoutineList.createdDate, ascending: true)
@@ -22,22 +22,22 @@ struct ListsView: View {
     
     return request
   }
+    
+  @FetchRequest private var lists: FetchedResults<RoutineList>
   
-  @FetchRequest(fetchRequest: getRoutineListFetchRequest, animation: .default)
-
-  private var lists: FetchedResults<RoutineList>
+  init() {
+    _lists = FetchRequest(
+      fetchRequest: ListsView.getRoutineListsFetchRequest,
+      animation: .default
+    )
+  }
   
   
   var body: some View {
     NavigationView {
       List {
         ForEach(lists) { list in
-          NavigationLink {
-            TasksView(list: list)
-              .environment(\.managedObjectContext, self.viewContext)
-          } label: {
-            Text("\(list.createdDate, formatter: itemFormatter) - \(list.name)")
-          }
+          ListItemView(list: list)
         }
         .onDelete(perform: deleteLists)
       }.environment(\.defaultMinListRowHeight, 80)
@@ -81,13 +81,6 @@ struct ListsView: View {
     }
   }
 }
-
-private let itemFormatter: DateFormatter = {
-  let formatter = DateFormatter()
-  formatter.dateStyle = .none
-  formatter.timeStyle = .medium
-  return formatter
-}()
 
 struct ListsView_Previews: PreviewProvider {
   static var previews: some View {

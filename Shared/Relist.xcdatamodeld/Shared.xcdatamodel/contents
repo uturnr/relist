@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
-    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-    </entity>
     <entity name="RoutineList" representedClassName="RoutineList" syncable="YES">
         <attribute name="createdDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" optional="YES" attributeType="String"/>
         <attribute name="name" attributeType="String" defaultValueString="New List"/>
         <attribute name="orderIndex" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="updatedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="tasksUpdatedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="updatedDate" optional="YES" attributeType="Date" derived="YES" derivationExpression="now()" usesScalarValueType="NO"/>
         <relationship name="tasks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RoutineTask" inverseName="list" inverseEntity="RoutineTask"/>
     </entity>
     <entity name="RoutineTask" representedClassName="RoutineTask" syncable="YES">
@@ -22,8 +20,7 @@
         <relationship name="list" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RoutineList" inverseName="tasks" inverseEntity="RoutineList"/>
     </entity>
     <elements>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
-        <element name="RoutineList" positionX="-63" positionY="-9" width="128" height="119"/>
+        <element name="RoutineList" positionX="-63" positionY="-9" width="128" height="134"/>
         <element name="RoutineTask" positionX="-54" positionY="9" width="128" height="149"/>
     </elements>
 </model>
