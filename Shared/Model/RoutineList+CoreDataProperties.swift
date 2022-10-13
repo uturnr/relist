@@ -1,11 +1,3 @@
-//
-//  RoutineList+CoreDataProperties.swift
-//  Relist
-//
-//  Created by uturnr on 2022-05-29.
-//
-//
-
 import Foundation
 import CoreData
 

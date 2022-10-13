@@ -1,10 +1,3 @@
-//
-//  TasksView.swift
-//  Shared
-//
-//  Created by uturnr on 2022-05-05.
-//
-
 import SwiftUI
 import CoreData
 

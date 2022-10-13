@@ -11,6 +11,12 @@
 		FF18AC2A284A32E8000FA842 /* TaskEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF18AC28284A32E8000FA842 /* TaskEditorView.swift */; };
 		FF1D0D862844331200C710B1 /* ListEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D0D852844331200C710B1 /* ListEditorView.swift */; };
 		FF1D0D872844331200C710B1 /* ListEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D0D852844331200C710B1 /* ListEditorView.swift */; };
+		FF2BEC1828F83EC90022F675 /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF2BEC1728F83EC90022F675 /* IDETemplateMacros.plist */; };
+		FF2BEC1928F83EC90022F675 /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF2BEC1728F83EC90022F675 /* IDETemplateMacros.plist */; };
+		FF2BEC1A28F83EC90022F675 /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF2BEC1728F83EC90022F675 /* IDETemplateMacros.plist */; };
+		FF2BEC1B28F83EC90022F675 /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF2BEC1728F83EC90022F675 /* IDETemplateMacros.plist */; };
+		FF2BEC1C28F83EC90022F675 /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF2BEC1728F83EC90022F675 /* IDETemplateMacros.plist */; };
+		FF2BEC1D28F83EC90022F675 /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF2BEC1728F83EC90022F675 /* IDETemplateMacros.plist */; };
 		FF317E3C286C7E3300DC2335 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */; };
 		FF317E3D286C7E3300DC2335 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */; };
 		FF317E3E286C7E3300DC2335 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */; };
@@ -23,8 +29,6 @@
 		FF4E23812843CFBD0028EF88 /* RoutineList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23792843CFBD0028EF88 /* RoutineList+CoreDataProperties.swift */; };
 		FF668078282D2FCD00C52CCE /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF668077282D2FCD00C52CCE /* TasksView.swift */; };
 		FF668079282D2FCD00C52CCE /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF668077282D2FCD00C52CCE /* TasksView.swift */; };
-		FF66807B282D30A300C52CCE /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF66807A282D30A300C52CCE /* IDETemplateMacros.plist */; };
-		FF66807C282D30A300C52CCE /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF66807A282D30A300C52CCE /* IDETemplateMacros.plist */; };
 		FF8B8EF5285E240A0033C4BD /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B8EF4285E240A0033C4BD /* ListItemView.swift */; };
 		FF8B8EF6285E240A0033C4BD /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B8EF4285E240A0033C4BD /* ListItemView.swift */; };
 		FF8B8EF7285E240A0033C4BD /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B8EF4285E240A0033C4BD /* ListItemView.swift */; };
@@ -40,7 +44,6 @@
 		FFE726ED28575C770018B9D7 /* ListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A28B2823EE530088DD67 /* ListsView.swift */; };
 		FFE726EE28575C770018B9D7 /* ListEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D0D852844331200C710B1 /* ListEditorView.swift */; };
 		FFE726F028575C770018B9D7 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFEE8F002854BA21009CF365 /* CloudKit.framework */; };
-		FFE726F228575C770018B9D7 /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF66807A282D30A300C52CCE /* IDETemplateMacros.plist */; };
 		FFE726F328575C770018B9D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF3A28D2823EE550088DD67 /* Assets.xcassets */; };
 		FFE726FB28575E260018B9D7 /* TaskEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF18AC28284A32E8000FA842 /* TaskEditorView.swift */; };
 		FFE726FC28575E260018B9D7 /* RoutineList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23782843CFBD0028EF88 /* RoutineList+CoreDataClass.swift */; };
@@ -53,7 +56,6 @@
 		FFE7270328575E260018B9D7 /* ListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A28B2823EE530088DD67 /* ListsView.swift */; };
 		FFE7270428575E260018B9D7 /* ListEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D0D852844331200C710B1 /* ListEditorView.swift */; };
 		FFE7270628575E260018B9D7 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFEE8F022854BAA5009CF365 /* CloudKit.framework */; };
-		FFE7270828575E260018B9D7 /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF66807A282D30A300C52CCE /* IDETemplateMacros.plist */; };
 		FFE7270928575E260018B9D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF3A28D2823EE550088DD67 /* Assets.xcassets */; };
 		FFEE8F012854BA21009CF365 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFEE8F002854BA21009CF365 /* CloudKit.framework */; };
 		FFEE8F032854BAA5009CF365 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFEE8F022854BAA5009CF365 /* CloudKit.framework */; };
@@ -93,12 +95,12 @@
 /* Begin PBXFileReference section */
 		FF18AC28284A32E8000FA842 /* TaskEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskEditorView.swift; sourceTree = "<group>"; };
 		FF1D0D852844331200C710B1 /* ListEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEditorView.swift; sourceTree = "<group>"; };
+		FF2BEC1728F83EC90022F675 /* IDETemplateMacros.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = IDETemplateMacros.plist; path = Relist.xcodeproj/xcshareddata/IDETemplateMacros.plist; sourceTree = "<group>"; };
 		FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		FF4E23762843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutineTask+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FF4E23782843CFBD0028EF88 /* RoutineList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutineList+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FF4E23792843CFBD0028EF88 /* RoutineList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutineList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FF668077282D2FCD00C52CCE /* TasksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
-		FF66807A282D30A300C52CCE /* IDETemplateMacros.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = IDETemplateMacros.plist; sourceTree = "<group>"; };
 		FF8B8EF4285E240A0033C4BD /* ListItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		FFE726F728575C770018B9D7 /* Relist Beta (iOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Relist Beta (iOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE726F828575C770018B9D7 /* Relist Beta (iOS)-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Relist Beta (iOS)-Info.plist"; path = "/Users/codycody/uturnr/relist/Relist Beta (iOS)-Info.plist"; sourceTree = "<absolute>"; };
@@ -197,7 +199,7 @@
 			children = (
 				FFEE8F042854BACE009CF365 /* Relist--iOS--Info.plist */,
 				FFEE8EFE2854BA17009CF365 /* Relist (iOS).entitlements */,
-				FF66807A282D30A300C52CCE /* IDETemplateMacros.plist */,
+				FF2BEC1728F83EC90022F675 /* IDETemplateMacros.plist */,
 				FFF3A2872823EE520088DD67 /* Shared */,
 				FFF3A2992823EE550088DD67 /* macOS */,
 				FFF3A2A22823EE550088DD67 /* Tests iOS */,
@@ -426,7 +428,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFE726F228575C770018B9D7 /* IDETemplateMacros.plist in Resources */,
+				FF2BEC1C28F83EC90022F675 /* IDETemplateMacros.plist in Resources */,
 				FFE726F328575C770018B9D7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,7 +437,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFE7270828575E260018B9D7 /* IDETemplateMacros.plist in Resources */,
+				FF2BEC1D28F83EC90022F675 /* IDETemplateMacros.plist in Resources */,
 				FFE7270928575E260018B9D7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,7 +446,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF66807B282D30A300C52CCE /* IDETemplateMacros.plist in Resources */,
+				FF2BEC1828F83EC90022F675 /* IDETemplateMacros.plist in Resources */,
 				FFF3A2BB2823EE550088DD67 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,7 +455,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF66807C282D30A300C52CCE /* IDETemplateMacros.plist in Resources */,
+				FF2BEC1928F83EC90022F675 /* IDETemplateMacros.plist in Resources */,
 				FFF3A2BC2823EE550088DD67 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +464,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF2BEC1A28F83EC90022F675 /* IDETemplateMacros.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +472,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF2BEC1B28F83EC90022F675 /* IDETemplateMacros.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

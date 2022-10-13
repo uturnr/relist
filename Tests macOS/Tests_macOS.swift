@@ -1,10 +1,3 @@
-//
-//  Tests_macOS.swift
-//  Tests macOS
-//
-//  Created by uturnr on 2022-05-05.
-//
-
 import XCTest
 
 class Tests_macOS: XCTestCase {
