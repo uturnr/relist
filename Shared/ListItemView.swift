@@ -1,10 +1,3 @@
-//
-//  ListItemView.swift
-//  Shared
-//
-//  Created by uturnr on 2022-06-29.
-//
-
 import SwiftUI
 import CoreData
 
