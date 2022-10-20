@@ -34,15 +34,7 @@ struct TasksView: View {
   var body: some View {
     List {
       ForEach(tasks) { task in
-        // TODO: Move to own view
-        Button(action: {
-          toggleTaskChecked(task: task)
-        }) {
-          HStack {
-            Text("\(task.checked ? "☑️" : "")")
-            Text("\(task.orderIndex) - \(task.name)")
-          }
-        }
+        TaskItemView(task: task)
       }
       .onDelete(perform: deleteTasks)
       .onMove(perform: moveTask)
@@ -180,22 +172,6 @@ struct TasksView: View {
       do {
         try viewContext.save()
         reorderAllTasks()
-        try viewContext.save()
-      } catch {
-        // Replace this implementation with code to handle the error appropriately.
-        // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-        let nsError = error as NSError
-        fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-      }
-    }
-  }
-  
-  private func toggleTaskChecked(task: RoutineTask) {
-    withAnimation {
-      task.checked = !task.checked
-      list.tasksUpdatedDate = Date.now
-      
-      do {
         try viewContext.save()
       } catch {
         // Replace this implementation with code to handle the error appropriately.

@@ -24,7 +24,7 @@ struct TaskEditorView: View {
                 self.nameFieldFocused = true
               }
             }
-            .onSubmit {
+            .onSubmit { // Used for enter key support.
               self.addTask()
             }
         }

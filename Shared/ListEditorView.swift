@@ -5,6 +5,8 @@ struct ListEditorView: View {
   @Environment(\.managedObjectContext) private var viewContext
   @Environment(\.presentationMode) var presentationMode
   
+  @FocusState var nameFieldFocused: Bool
+
   @State private var name = ""
   
   var body: some View {
@@ -12,11 +14,21 @@ struct ListEditorView: View {
       Form {
         Section {
           TextField("Name", text: $name)
+            .focused($nameFieldFocused, equals: true)
+            .onAppear {
+              DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+                self.nameFieldFocused = true
+              }
+            }
+            .onSubmit { // Used for enter key support.
+              self.addList(name: self.name)
+            }
         }
         
         Button("Add List") {
           self.addList(name: self.name)
         }
+        .keyboardShortcut(.defaultAction)
       }
       #if os(iOS)
         .navigationBarTitle("New List")

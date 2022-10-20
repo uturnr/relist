@@ -17,6 +17,10 @@
 		FF2BEC1B28F83EC90022F675 /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF2BEC1728F83EC90022F675 /* IDETemplateMacros.plist */; };
 		FF2BEC1C28F83EC90022F675 /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF2BEC1728F83EC90022F675 /* IDETemplateMacros.plist */; };
 		FF2BEC1D28F83EC90022F675 /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF2BEC1728F83EC90022F675 /* IDETemplateMacros.plist */; };
+		FF2BEC1F28F845CE0022F675 /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2BEC1E28F845CE0022F675 /* TaskItemView.swift */; };
+		FF2BEC2028F845CE0022F675 /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2BEC1E28F845CE0022F675 /* TaskItemView.swift */; };
+		FF2BEC2128F845CE0022F675 /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2BEC1E28F845CE0022F675 /* TaskItemView.swift */; };
+		FF2BEC2228F845CE0022F675 /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2BEC1E28F845CE0022F675 /* TaskItemView.swift */; };
 		FF317E3C286C7E3300DC2335 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */; };
 		FF317E3D286C7E3300DC2335 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */; };
 		FF317E3E286C7E3300DC2335 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */; };
@@ -96,6 +100,7 @@
 		FF18AC28284A32E8000FA842 /* TaskEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskEditorView.swift; sourceTree = "<group>"; };
 		FF1D0D852844331200C710B1 /* ListEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEditorView.swift; sourceTree = "<group>"; };
 		FF2BEC1728F83EC90022F675 /* IDETemplateMacros.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = IDETemplateMacros.plist; path = Relist.xcodeproj/xcshareddata/IDETemplateMacros.plist; sourceTree = "<group>"; };
+		FF2BEC1E28F845CE0022F675 /* TaskItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
 		FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		FF4E23762843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutineTask+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FF4E23782843CFBD0028EF88 /* RoutineList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutineList+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -221,6 +226,7 @@
 				FF1D0D852844331200C710B1 /* ListEditorView.swift */,
 				FF18AC28284A32E8000FA842 /* TaskEditorView.swift */,
 				FF668077282D2FCD00C52CCE /* TasksView.swift */,
+				FF2BEC1E28F845CE0022F675 /* TaskItemView.swift */,
 				FFF3A28C2823EE530088DD67 /* Persistence.swift */,
 				FFF3A28D2823EE550088DD67 /* Assets.xcassets */,
 				FFF3A2882823EE530088DD67 /* Relist.xcdatamodeld */,
@@ -483,6 +489,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF2BEC2128F845CE0022F675 /* TaskItemView.swift in Sources */,
 				FFE726E528575C770018B9D7 /* TaskEditorView.swift in Sources */,
 				FFE726E628575C770018B9D7 /* RoutineList+CoreDataClass.swift in Sources */,
 				FFE726E728575C770018B9D7 /* RelistApp.swift in Sources */,
@@ -502,6 +509,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF2BEC2228F845CE0022F675 /* TaskItemView.swift in Sources */,
 				FFE726FB28575E260018B9D7 /* TaskEditorView.swift in Sources */,
 				FFE726FC28575E260018B9D7 /* RoutineList+CoreDataClass.swift in Sources */,
 				FFE726FD28575E260018B9D7 /* RelistApp.swift in Sources */,
@@ -521,6 +529,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF2BEC1F28F845CE0022F675 /* TaskItemView.swift in Sources */,
 				FF18AC29284A32E8000FA842 /* TaskEditorView.swift in Sources */,
 				FF4E237E2843CFBD0028EF88 /* RoutineList+CoreDataClass.swift in Sources */,
 				FFF3A2B52823EE550088DD67 /* RelistApp.swift in Sources */,
@@ -540,6 +549,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF2BEC2028F845CE0022F675 /* TaskItemView.swift in Sources */,
 				FF18AC2A284A32E8000FA842 /* TaskEditorView.swift in Sources */,
 				FF4E237F2843CFBD0028EF88 /* RoutineList+CoreDataClass.swift in Sources */,
 				FFF3A2B62823EE550088DD67 /* RelistApp.swift in Sources */,
