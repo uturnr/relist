@@ -9,8 +9,9 @@ public class RoutineList: NSManagedObject, Identifiable {
   
   // MARK: Core Data properties
 
-  @NSManaged public private(set) var id: String
   @NSManaged public private(set) var createdDate: Date
+  @NSManaged public private(set) var id: String
+
   
   @NSManaged public var name: String
   @NSManaged public var orderIndex: Int64
