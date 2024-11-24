@@ -10,10 +10,16 @@ jobs:
   test-ios:
     runs-on: macos-15
 
+    env:
+      IPHONE: "16"
+      IOS: "18.0"
+
     steps:
     - uses: actions/checkout@v4
-    - name: Run Tests (iPhone 16, iOS 18)
+    - name: Run Tests (iPhone ${{ env.IPHONE }}, iOS ${{ env.IOS }})
       run: |
         xcodebuild test \
           -scheme 'Relist Beta (iOS)' \
-          -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.0'
+          -destination 'platform=iOS Simulator,\
+            name=iPhone ${{ env.IPHONE }},\
+            OS=${{ env.IOS }}'
