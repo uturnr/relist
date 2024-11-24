@@ -138,6 +138,9 @@ class Tests_iOS: XCTestCase {
       thenHoldForDuration: 0.5
     )
     
+    // Add a small wait to ensure reordering animation completes
+    Thread.sleep(forTimeInterval: 0.5)
+    
     let movedTask = expectedVisibleTasks.removeFirst()
     expectedVisibleTasks.append(movedTask) // 4, 5, 3
     assertVisibleTasksMatch(expectedVisibleTasks)
