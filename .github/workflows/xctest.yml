@@ -12,8 +12,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Run Tests (iPhone 16, iOS 18)
+    - name: Run Tests (iPhone 15, iOS 18)
       run: |
         xcodebuild test \
           -scheme 'Relist Beta (iOS)' \
-          -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.0'
+          -destination 'platform=iOS Simulator,name=iPhone 15,OS=18.0'
