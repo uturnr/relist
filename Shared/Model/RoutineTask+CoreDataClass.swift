@@ -34,7 +34,7 @@ public class RoutineTask: NSManagedObject, Identifiable {
     let entity = NSEntityDescription.entity(forEntityName: "RoutineTask", in: context)!
     super.init(entity: entity, insertInto: context)
     self.id = id
-    self.checked = false
+    self.checked = checked
     self.createdDate = createdDate
     self.name = name
     self.orderIndex = orderIndex

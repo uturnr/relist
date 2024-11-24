@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF06C33429D70F4B0095AEDE /* AnimatedSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06C33329D70F4B0095AEDE /* AnimatedSeparatorView.swift */; };
+		FF06C33529D70F4B0095AEDE /* AnimatedSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06C33329D70F4B0095AEDE /* AnimatedSeparatorView.swift */; };
+		FF06C33629D70F4B0095AEDE /* AnimatedSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06C33329D70F4B0095AEDE /* AnimatedSeparatorView.swift */; };
+		FF06C33729D70F4B0095AEDE /* AnimatedSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06C33329D70F4B0095AEDE /* AnimatedSeparatorView.swift */; };
 		FF18AC29284A32E8000FA842 /* TaskEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF18AC28284A32E8000FA842 /* TaskEditorView.swift */; };
 		FF18AC2A284A32E8000FA842 /* TaskEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF18AC28284A32E8000FA842 /* TaskEditorView.swift */; };
 		FF1D0D862844331200C710B1 /* ListEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D0D852844331200C710B1 /* ListEditorView.swift */; };
@@ -21,6 +25,12 @@
 		FF2BEC2028F845CE0022F675 /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2BEC1E28F845CE0022F675 /* TaskItemView.swift */; };
 		FF2BEC2128F845CE0022F675 /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2BEC1E28F845CE0022F675 /* TaskItemView.swift */; };
 		FF2BEC2228F845CE0022F675 /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2BEC1E28F845CE0022F675 /* TaskItemView.swift */; };
+		FF2C68212CF2B48A00B15E0B /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2C68202CF2B47D00B15E0B /* Bundle.swift */; };
+		FF2C68222CF2B48A00B15E0B /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2C68202CF2B47D00B15E0B /* Bundle.swift */; };
+		FF2C68232CF2B48A00B15E0B /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2C68202CF2B47D00B15E0B /* Bundle.swift */; };
+		FF2C68242CF2B48A00B15E0B /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2C68202CF2B47D00B15E0B /* Bundle.swift */; };
+		FF2C68252CF2B48A00B15E0B /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2C68202CF2B47D00B15E0B /* Bundle.swift */; };
+		FF2C68262CF2B48A00B15E0B /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2C68202CF2B47D00B15E0B /* Bundle.swift */; };
 		FF317E3C286C7E3300DC2335 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */; };
 		FF317E3D286C7E3300DC2335 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */; };
 		FF317E3E286C7E3300DC2335 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */; };
@@ -37,6 +47,38 @@
 		FF8B8EF6285E240A0033C4BD /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B8EF4285E240A0033C4BD /* ListItemView.swift */; };
 		FF8B8EF7285E240A0033C4BD /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B8EF4285E240A0033C4BD /* ListItemView.swift */; };
 		FF8B8EF8285E240A0033C4BD /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B8EF4285E240A0033C4BD /* ListItemView.swift */; };
+		FF90CD5C29296F4D001579DC /* Animation+instant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90CD5B29296F4D001579DC /* Animation+instant.swift */; };
+		FF90CD5D29296F4D001579DC /* Animation+instant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90CD5B29296F4D001579DC /* Animation+instant.swift */; };
+		FF90CD5E29296F4D001579DC /* Animation+instant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90CD5B29296F4D001579DC /* Animation+instant.swift */; };
+		FF90CD5F29296F4D001579DC /* Animation+instant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90CD5B29296F4D001579DC /* Animation+instant.swift */; };
+		FF90CD6029296F4D001579DC /* Animation+instant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90CD5B29296F4D001579DC /* Animation+instant.swift */; };
+		FF90CD6129296F4D001579DC /* Animation+instant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90CD5B29296F4D001579DC /* Animation+instant.swift */; };
+		FF9718FD29ED7C7000A4AF18 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9718FC29ED7C7000A4AF18 /* Color.swift */; };
+		FF9718FE29ED7C7000A4AF18 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9718FC29ED7C7000A4AF18 /* Color.swift */; };
+		FF9718FF29ED7C7000A4AF18 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9718FC29ED7C7000A4AF18 /* Color.swift */; };
+		FF97190029ED7C7000A4AF18 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9718FC29ED7C7000A4AF18 /* Color.swift */; };
+		FF97190129ED7C7000A4AF18 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9718FC29ED7C7000A4AF18 /* Color.swift */; };
+		FF97190229ED7C7000A4AF18 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9718FC29ED7C7000A4AF18 /* Color.swift */; };
+		FFDF37D929F43FB600289812 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A28C2823EE530088DD67 /* Persistence.swift */; };
+		FFDF37DA29F43FB600289812 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A28C2823EE530088DD67 /* Persistence.swift */; };
+		FFDF37E029F4488C00289812 /* RoutineTask+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23762843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift */; };
+		FFDF37E129F4488C00289812 /* RoutineList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23782843CFBD0028EF88 /* RoutineList+CoreDataClass.swift */; };
+		FFDF37E229F4488C00289812 /* RoutineList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23792843CFBD0028EF88 /* RoutineList+CoreDataProperties.swift */; };
+		FFDF37E329F4488C00289812 /* RelistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A28A2823EE530088DD67 /* RelistApp.swift */; };
+		FFDF37E429F4488C00289812 /* ListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A28B2823EE530088DD67 /* ListsView.swift */; };
+		FFDF37E529F4488C00289812 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8B8EF4285E240A0033C4BD /* ListItemView.swift */; };
+		FFDF37E629F4488C00289812 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */; };
+		FFDF37E729F4488C00289812 /* ListEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D0D852844331200C710B1 /* ListEditorView.swift */; };
+		FFDF37E829F4488C00289812 /* TaskEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF18AC28284A32E8000FA842 /* TaskEditorView.swift */; };
+		FFDF37E929F4488C00289812 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF668077282D2FCD00C52CCE /* TasksView.swift */; };
+		FFDF37EA29F4488C00289812 /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2BEC1E28F845CE0022F675 /* TaskItemView.swift */; };
+		FFDF37EB29F4488C00289812 /* AnimatedSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06C33329D70F4B0095AEDE /* AnimatedSeparatorView.swift */; };
+		FFDF37EC29F4488C00289812 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A28D2823EE550088DD67 /* Assets.xcassets */; };
+		FFDF37ED29F4488C00289812 /* Relist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A2882823EE530088DD67 /* Relist.xcdatamodeld */; };
+		FFDF37F529F4488C00289812 /* Relist Beta (iOS).app in Sources */ = {isa = PBXBuildFile; fileRef = FFE726F728575C770018B9D7 /* Relist Beta (iOS).app */; };
+		FFDF37F729F4488C00289812 /* CloudKit.framework in Sources */ = {isa = PBXBuildFile; fileRef = FFEE8F022854BAA5009CF365 /* CloudKit.framework */; };
+		FFDF37FA29F4493400289812 /* Relist (iOS).entitlements in Sources */ = {isa = PBXBuildFile; fileRef = FFEE8EFE2854BA17009CF365 /* Relist (iOS).entitlements */; };
+		FFDF37FB29F44CDB00289812 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFEE8F022854BAA5009CF365 /* CloudKit.framework */; };
 		FFE726E528575C770018B9D7 /* TaskEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF18AC28284A32E8000FA842 /* TaskEditorView.swift */; };
 		FFE726E628575C770018B9D7 /* RoutineList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23782843CFBD0028EF88 /* RoutineList+CoreDataClass.swift */; };
 		FFE726E728575C770018B9D7 /* RelistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A28A2823EE530088DD67 /* RelistApp.swift */; };
@@ -47,7 +89,6 @@
 		FFE726EC28575C770018B9D7 /* Relist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A2882823EE530088DD67 /* Relist.xcdatamodeld */; };
 		FFE726ED28575C770018B9D7 /* ListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A28B2823EE530088DD67 /* ListsView.swift */; };
 		FFE726EE28575C770018B9D7 /* ListEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D0D852844331200C710B1 /* ListEditorView.swift */; };
-		FFE726F028575C770018B9D7 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFEE8F002854BA21009CF365 /* CloudKit.framework */; };
 		FFE726F328575C770018B9D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF3A28D2823EE550088DD67 /* Assets.xcassets */; };
 		FFE726FB28575E260018B9D7 /* TaskEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF18AC28284A32E8000FA842 /* TaskEditorView.swift */; };
 		FFE726FC28575E260018B9D7 /* RoutineList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23782843CFBD0028EF88 /* RoutineList+CoreDataClass.swift */; };
@@ -61,7 +102,6 @@
 		FFE7270428575E260018B9D7 /* ListEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D0D852844331200C710B1 /* ListEditorView.swift */; };
 		FFE7270628575E260018B9D7 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFEE8F022854BAA5009CF365 /* CloudKit.framework */; };
 		FFE7270928575E260018B9D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF3A28D2823EE550088DD67 /* Assets.xcassets */; };
-		FFEE8F012854BA21009CF365 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFEE8F002854BA21009CF365 /* CloudKit.framework */; };
 		FFEE8F032854BAA5009CF365 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFEE8F022854BAA5009CF365 /* CloudKit.framework */; };
 		FFF3A2A42823EE550088DD67 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A2A32823EE550088DD67 /* Tests_iOS.swift */; };
 		FFF3A2A62823EE550088DD67 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3A2A52823EE550088DD67 /* Tests_iOSLaunchTests.swift */; };
@@ -80,6 +120,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		FFDF37DB29F4473200289812 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFF3A2832823EE520088DD67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFE726E328575C770018B9D7;
+			remoteInfo = "Relist Beta (iOS)";
+		};
 		FFF3A2A02823EE550088DD67 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FFF3A2832823EE520088DD67 /* Project object */;
@@ -97,21 +144,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF06C33329D70F4B0095AEDE /* AnimatedSeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSeparatorView.swift; sourceTree = "<group>"; };
 		FF18AC28284A32E8000FA842 /* TaskEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskEditorView.swift; sourceTree = "<group>"; };
 		FF1D0D852844331200C710B1 /* ListEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListEditorView.swift; sourceTree = "<group>"; };
 		FF2BEC1728F83EC90022F675 /* IDETemplateMacros.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = IDETemplateMacros.plist; path = Relist.xcodeproj/xcshareddata/IDETemplateMacros.plist; sourceTree = "<group>"; };
 		FF2BEC1E28F845CE0022F675 /* TaskItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
+		FF2C68202CF2B47D00B15E0B /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
-		FF4E23762843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutineTask+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FF4E23762843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutineTask+CoreDataClass.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xcfilelist; };
 		FF4E23782843CFBD0028EF88 /* RoutineList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutineList+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FF4E23792843CFBD0028EF88 /* RoutineList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutineList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FF668077282D2FCD00C52CCE /* TasksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
 		FF8B8EF4285E240A0033C4BD /* ListItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		FF90CD5B29296F4D001579DC /* Animation+instant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animation+instant.swift"; sourceTree = "<group>"; };
+		FF9718FC29ED7C7000A4AF18 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		FFE726F728575C770018B9D7 /* Relist Beta (iOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Relist Beta (iOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE726F828575C770018B9D7 /* Relist Beta (iOS)-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Relist Beta (iOS)-Info.plist"; path = "/Users/codycody/uturnr/relist/Relist Beta (iOS)-Info.plist"; sourceTree = "<absolute>"; };
 		FFE7270D28575E260018B9D7 /* Relist Beta (macOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Relist Beta (macOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEE8EFE2854BA17009CF365 /* Relist (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Relist (iOS).entitlements"; sourceTree = "<group>"; };
-		FFEE8F002854BA21009CF365 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		FFEE8F022854BAA5009CF365 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		FFEE8F042854BACE009CF365 /* Relist--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Relist--iOS--Info.plist"; sourceTree = "<group>"; };
 		FFF3A2892823EE530088DD67 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
@@ -135,7 +185,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFE726F028575C770018B9D7 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +200,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFEE8F012854BA21009CF365 /* CloudKit.framework in Frameworks */,
+				FFDF37FB29F44CDB00289812 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,11 +239,27 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		FF90CD6229296F54001579DC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FF2C68202CF2B47D00B15E0B /* Bundle.swift */,
+				FF90CD5B29296F4D001579DC /* Animation+instant.swift */,
+				FF9718FC29ED7C7000A4AF18 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FF90CD6A292970B3001579DC /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		FFEE8EFF2854BA21009CF365 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				FFEE8F022854BAA5009CF365 /* CloudKit.framework */,
-				FFEE8F002854BA21009CF365 /* CloudKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -218,6 +283,8 @@
 		FFF3A2872823EE520088DD67 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				FF90CD6A292970B3001579DC /* Animations */,
+				FF90CD6229296F54001579DC /* Extensions */,
 				FF4E23752843CD090028EF88 /* Model */,
 				FFF3A28A2823EE530088DD67 /* RelistApp.swift */,
 				FFF3A28B2823EE530088DD67 /* ListsView.swift */,
@@ -227,6 +294,7 @@
 				FF18AC28284A32E8000FA842 /* TaskEditorView.swift */,
 				FF668077282D2FCD00C52CCE /* TasksView.swift */,
 				FF2BEC1E28F845CE0022F675 /* TaskItemView.swift */,
+				FF06C33329D70F4B0095AEDE /* AnimatedSeparatorView.swift */,
 				FFF3A28C2823EE530088DD67 /* Persistence.swift */,
 				FFF3A28D2823EE550088DD67 /* Assets.xcassets */,
 				FFF3A2882823EE530088DD67 /* Relist.xcdatamodeld */,
@@ -356,6 +424,7 @@
 			);
 			dependencies = (
 				FFF3A2A12823EE550088DD67 /* PBXTargetDependency */,
+				FFDF37DC29F4473200289812 /* PBXTargetDependency */,
 			);
 			name = "Tests iOS";
 			productName = "Tests iOS";
@@ -388,7 +457,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					FFF3A2912823EE550088DD67 = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -398,7 +467,7 @@
 					};
 					FFF3A29E2823EE550088DD67 = {
 						CreatedOnToolsVersion = 13.3.1;
-						TestTargetID = FFF3A2912823EE550088DD67;
+						TestTargetID = FFE726E328575C770018B9D7;
 					};
 					FFF3A2AA2823EE550088DD67 = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -497,11 +566,15 @@
 				FFE726E828575C770018B9D7 /* RoutineList+CoreDataProperties.swift in Sources */,
 				FFE726E928575C770018B9D7 /* RoutineTask+CoreDataClass.swift in Sources */,
 				FFE726EA28575C770018B9D7 /* Persistence.swift in Sources */,
+				FF06C33629D70F4B0095AEDE /* AnimatedSeparatorView.swift in Sources */,
 				FFE726EB28575C770018B9D7 /* TasksView.swift in Sources */,
 				FFE726EC28575C770018B9D7 /* Relist.xcdatamodeld in Sources */,
+				FF90CD6029296F4D001579DC /* Animation+instant.swift in Sources */,
 				FFE726ED28575C770018B9D7 /* ListsView.swift in Sources */,
+				FF2C68212CF2B48A00B15E0B /* Bundle.swift in Sources */,
 				FF317E3E286C7E3300DC2335 /* CircularProgressView.swift in Sources */,
 				FFE726EE28575C770018B9D7 /* ListEditorView.swift in Sources */,
+				FF97190129ED7C7000A4AF18 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,11 +590,15 @@
 				FFE726FE28575E260018B9D7 /* RoutineList+CoreDataProperties.swift in Sources */,
 				FFE726FF28575E260018B9D7 /* RoutineTask+CoreDataClass.swift in Sources */,
 				FFE7270028575E260018B9D7 /* Persistence.swift in Sources */,
+				FF06C33729D70F4B0095AEDE /* AnimatedSeparatorView.swift in Sources */,
 				FFE7270128575E260018B9D7 /* TasksView.swift in Sources */,
 				FFE7270228575E260018B9D7 /* Relist.xcdatamodeld in Sources */,
+				FF90CD6129296F4D001579DC /* Animation+instant.swift in Sources */,
 				FFE7270328575E260018B9D7 /* ListsView.swift in Sources */,
+				FF2C68262CF2B48A00B15E0B /* Bundle.swift in Sources */,
 				FF317E3F286C7E3300DC2335 /* CircularProgressView.swift in Sources */,
 				FFE7270428575E260018B9D7 /* ListEditorView.swift in Sources */,
+				FF97190229ED7C7000A4AF18 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,11 +614,15 @@
 				FF4E23802843CFBD0028EF88 /* RoutineList+CoreDataProperties.swift in Sources */,
 				FF4E237A2843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift in Sources */,
 				FFF3A2B92823EE550088DD67 /* Persistence.swift in Sources */,
+				FF06C33429D70F4B0095AEDE /* AnimatedSeparatorView.swift in Sources */,
 				FF668078282D2FCD00C52CCE /* TasksView.swift in Sources */,
 				FFF3A2B32823EE550088DD67 /* Relist.xcdatamodeld in Sources */,
+				FF90CD5C29296F4D001579DC /* Animation+instant.swift in Sources */,
 				FFF3A2B72823EE550088DD67 /* ListsView.swift in Sources */,
+				FF2C68222CF2B48A00B15E0B /* Bundle.swift in Sources */,
 				FF317E3C286C7E3300DC2335 /* CircularProgressView.swift in Sources */,
 				FF1D0D862844331200C710B1 /* ListEditorView.swift in Sources */,
+				FF9718FD29ED7C7000A4AF18 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,11 +638,15 @@
 				FF4E23812843CFBD0028EF88 /* RoutineList+CoreDataProperties.swift in Sources */,
 				FF4E237B2843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift in Sources */,
 				FFF3A2BA2823EE550088DD67 /* Persistence.swift in Sources */,
+				FF06C33529D70F4B0095AEDE /* AnimatedSeparatorView.swift in Sources */,
 				FF668079282D2FCD00C52CCE /* TasksView.swift in Sources */,
 				FFF3A2B42823EE550088DD67 /* Relist.xcdatamodeld in Sources */,
+				FF90CD5D29296F4D001579DC /* Animation+instant.swift in Sources */,
 				FFF3A2B82823EE550088DD67 /* ListsView.swift in Sources */,
+				FF2C68252CF2B48A00B15E0B /* Bundle.swift in Sources */,
 				FF317E3D286C7E3300DC2335 /* CircularProgressView.swift in Sources */,
 				FF1D0D872844331200C710B1 /* ListEditorView.swift in Sources */,
+				FF9718FE29ED7C7000A4AF18 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,8 +654,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFDF37FA29F4493400289812 /* Relist (iOS).entitlements in Sources */,
+				FFDF37E029F4488C00289812 /* RoutineTask+CoreDataClass.swift in Sources */,
+				FFDF37E129F4488C00289812 /* RoutineList+CoreDataClass.swift in Sources */,
+				FFDF37E229F4488C00289812 /* RoutineList+CoreDataProperties.swift in Sources */,
+				FFDF37E329F4488C00289812 /* RelistApp.swift in Sources */,
+				FFDF37E429F4488C00289812 /* ListsView.swift in Sources */,
+				FFDF37E529F4488C00289812 /* ListItemView.swift in Sources */,
+				FFDF37E629F4488C00289812 /* CircularProgressView.swift in Sources */,
+				FFDF37E729F4488C00289812 /* ListEditorView.swift in Sources */,
+				FFDF37E829F4488C00289812 /* TaskEditorView.swift in Sources */,
+				FFDF37E929F4488C00289812 /* TasksView.swift in Sources */,
+				FFDF37EA29F4488C00289812 /* TaskItemView.swift in Sources */,
+				FF2C68232CF2B48A00B15E0B /* Bundle.swift in Sources */,
+				FFDF37EB29F4488C00289812 /* AnimatedSeparatorView.swift in Sources */,
+				FFDF37EC29F4488C00289812 /* Assets.xcassets in Sources */,
+				FFDF37ED29F4488C00289812 /* Relist.xcdatamodeld in Sources */,
+				FFDF37F529F4488C00289812 /* Relist Beta (iOS).app in Sources */,
+				FFDF37F729F4488C00289812 /* CloudKit.framework in Sources */,
 				FFF3A2A62823EE550088DD67 /* Tests_iOSLaunchTests.swift in Sources */,
+				FFDF37D929F43FB600289812 /* Persistence.swift in Sources */,
 				FFF3A2A42823EE550088DD67 /* Tests_iOS.swift in Sources */,
+				FF90CD5E29296F4D001579DC /* Animation+instant.swift in Sources */,
+				FF9718FF29ED7C7000A4AF18 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,13 +685,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFF3A2B22823EE550088DD67 /* Tests_macOSLaunchTests.swift in Sources */,
+				FF2C68242CF2B48A00B15E0B /* Bundle.swift in Sources */,
+				FFDF37DA29F43FB600289812 /* Persistence.swift in Sources */,
 				FFF3A2B02823EE550088DD67 /* Tests_macOS.swift in Sources */,
+				FF90CD5F29296F4D001579DC /* Animation+instant.swift in Sources */,
+				FF97190029ED7C7000A4AF18 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		FFDF37DC29F4473200289812 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFE726E328575C770018B9D7 /* Relist Beta (iOS) */;
+			targetProxy = FFDF37DB29F4473200289812 /* PBXContainerItemProxy */;
+		};
 		FFF3A2A12823EE550088DD67 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FFF3A2912823EE550088DD67 /* Relist (iOS) */;
@@ -680,6 +795,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = KLQGJ9XU3B;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -709,6 +825,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = KLQGJ9XU3B;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -761,9 +878,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -819,9 +938,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -916,6 +1037,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = KLQGJ9XU3B;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -945,6 +1067,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = KLQGJ9XU3B;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -967,7 +1090,6 @@
 		FFF3A2C62823EE550088DD67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LE39A4G2MZ;
@@ -980,14 +1102,13 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Relist (iOS)";
+				TEST_TARGET_NAME = "Relist Beta (iOS)";
 			};
 			name = Debug;
 		};
 		FFF3A2C72823EE550088DD67 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LE39A4G2MZ;
@@ -1000,7 +1121,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Relist (iOS)";
+				TEST_TARGET_NAME = "Relist Beta (iOS)";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1008,9 +1129,9 @@
 		FFF3A2C92823EE550088DD67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = LE39A4G2MZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
@@ -1027,9 +1148,9 @@
 		FFF3A2CA2823EE550088DD67 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = LE39A4G2MZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
