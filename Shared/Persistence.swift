@@ -1,23 +1,54 @@
 import CoreData
+import SwiftUI
 
 struct PersistenceController {
   static let shared = PersistenceController()
   
-  static var preview: PersistenceController = {
-    let result = PersistenceController(inMemory: true)
-    let viewContext = result.container.viewContext
-    
+  static func setupMockList(_ viewContext: NSManagedObjectContext) {
     let list = RoutineList(
       context: viewContext,
-      name: "Test List",
+      name: "Test List 1",
       orderIndex: 0
     )
     
     let _ = RoutineTask(
       context: viewContext,
+      checked: false,
       list: list,
-      name: "Test Task",
+      name: "Test Task 1",
       orderIndex: 0
+    )
+    
+    let _ = RoutineTask(
+      context: viewContext,
+      checked: false,
+      list: list,
+      name: "Test Task 2",
+      orderIndex: 1
+    )
+    
+    let _ = RoutineTask(
+      context: viewContext,
+      checked: false,
+      list: list,
+      name: "Test Task 3",
+      orderIndex: 2
+    )
+    
+    let _ = RoutineTask(
+      context: viewContext,
+      checked: false,
+      list: list,
+      name: "Test Task 4",
+      orderIndex: 3
+    )
+    
+    let _ = RoutineTask(
+      context: viewContext,
+      checked: false,
+      list: list,
+      name: "Test Task 5",
+      orderIndex: 4
     )
     
     do {
@@ -28,6 +59,21 @@ struct PersistenceController {
       let nsError = error as NSError
       fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
     }
+  }
+  
+  static func getPreviewList(_ viewContext: NSManagedObjectContext) -> RoutineList {
+    let request: NSFetchRequest<RoutineList> = RoutineList.fetchRequest()
+
+    let lists = try! viewContext.fetch(request)
+    return lists[0]
+  }
+  
+  static var preview: PersistenceController = {
+    let result = PersistenceController(inMemory: true)
+    let viewContext = result.container.viewContext
+    
+    setupMockList(viewContext)
+
     return result
   }()
   
