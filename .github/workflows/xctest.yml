@@ -20,6 +20,4 @@ jobs:
       run: |
         xcodebuild test \
           -scheme 'Relist Beta (iOS)' \
-          -destination 'platform=iOS Simulator,\
-            name=iPhone ${{ env.IPHONE }},\
-            OS=${{ env.IOS }}'
+          -destination "platform=iOS Simulator,name=iPhone ${{ env.IPHONE }},OS=${{ env.IOS }}"
