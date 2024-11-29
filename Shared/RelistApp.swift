@@ -3,6 +3,7 @@ import SwiftUI
 @main
 struct RelistApp: App {
   let persistenceController: PersistenceController
+  @StateObject private var settingsManager = SettingsManager()
   
   init() {
     // Handle UI test automation settings
@@ -23,10 +24,13 @@ struct RelistApp: App {
   
   var body: some Scene {
     WindowGroup {
-      ListsView().environment(
+      ListsView()
+      .environment(
         \.managedObjectContext,
          persistenceController.container.viewContext
       )
+      .environmentObject(settingsManager)
+      .accentColor(.blue)
     }
   }
 }
