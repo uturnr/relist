@@ -85,7 +85,7 @@ class Tests_iOS: XCTestCase {
       = ["Task 5", "Task 4", "Task 3", "Task 2", "Task 1"]
     assertVisibleTasksMatch(expectedVisibleTasks)
 
-    navBar.buttons["Back"].tap()
+    navBar.buttons.firstMatch.tap()
     deleteTestList(named: testListName)
   }
   
@@ -145,7 +145,7 @@ class Tests_iOS: XCTestCase {
     expectedVisibleTasks.append(movedTask) // 4, 5, 3
     assertVisibleTasksMatch(expectedVisibleTasks)
     
-    navBar.buttons["Back"].tap()
+    navBar.buttons.firstMatch.tap()
     deleteTestList(named: testListName)
   }
   
