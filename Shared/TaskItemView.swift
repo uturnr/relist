@@ -15,6 +15,7 @@ struct TaskItemButtonStyle: ButtonStyle {
 
 struct TaskItemView: View {
   @Environment(\.managedObjectContext) private var viewContext
+  @EnvironmentObject private var settings: SettingsManager
   
   @ObservedObject var task: RoutineTask
   
@@ -84,7 +85,10 @@ struct TaskItemView: View {
         HStack {
           Text("\(task.checked ? "☑️" : "")")
 
-          Text("\(task.orderIndex) - \(task.name)")
+          let taskPrefix = settings.showTaskIndices
+            ? "\(task.orderIndex) - "
+            : ""
+          Text(taskPrefix + task.name)
             .accessibilityIdentifier("taskName")
             .opacity(isCompleted ? 0.5 : 1.0)
 

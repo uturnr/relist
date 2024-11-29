@@ -35,6 +35,17 @@
 		FF317E3D286C7E3300DC2335 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */; };
 		FF317E3E286C7E3300DC2335 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */; };
 		FF317E3F286C7E3300DC2335 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */; };
+		FF3842E52CF96B5B0044A39E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3842E42CF96B5B0044A39E /* SettingsView.swift */; };
+		FF3842E62CF96B5B0044A39E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3842E42CF96B5B0044A39E /* SettingsView.swift */; };
+		FF3842E72CF96B5B0044A39E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3842E42CF96B5B0044A39E /* SettingsView.swift */; };
+		FF3842E82CF96B5B0044A39E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3842E42CF96B5B0044A39E /* SettingsView.swift */; };
+		FF3842E92CF96B5B0044A39E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3842E42CF96B5B0044A39E /* SettingsView.swift */; };
+		FF3842EB2CF979DA0044A39E /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3842EA2CF979DA0044A39E /* SettingsManager.swift */; };
+		FF3842EC2CF979DA0044A39E /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3842EA2CF979DA0044A39E /* SettingsManager.swift */; };
+		FF3842ED2CF979DA0044A39E /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3842EA2CF979DA0044A39E /* SettingsManager.swift */; };
+		FF3842EE2CF979DA0044A39E /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3842EA2CF979DA0044A39E /* SettingsManager.swift */; };
+		FF3842EF2CF979DA0044A39E /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3842EA2CF979DA0044A39E /* SettingsManager.swift */; };
+		FF3842F02CF979DA0044A39E /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3842EA2CF979DA0044A39E /* SettingsManager.swift */; };
 		FF4E237A2843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23762843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift */; };
 		FF4E237B2843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23762843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift */; };
 		FF4E237E2843CFBD0028EF88 /* RoutineList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E23782843CFBD0028EF88 /* RoutineList+CoreDataClass.swift */; };
@@ -151,6 +162,8 @@
 		FF2BEC1E28F845CE0022F675 /* TaskItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
 		FF2C68202CF2B47D00B15E0B /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		FF3842E42CF96B5B0044A39E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FF3842EA2CF979DA0044A39E /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
 		FF4E23762843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutineTask+CoreDataClass.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xcfilelist; };
 		FF4E23782843CFBD0028EF88 /* RoutineList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutineList+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FF4E23792843CFBD0028EF88 /* RoutineList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutineList+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -283,11 +296,13 @@
 		FFF3A2872823EE520088DD67 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				FF3842EA2CF979DA0044A39E /* SettingsManager.swift */,
 				FF90CD6A292970B3001579DC /* Animations */,
 				FF90CD6229296F54001579DC /* Extensions */,
 				FF4E23752843CD090028EF88 /* Model */,
 				FFF3A28A2823EE530088DD67 /* RelistApp.swift */,
 				FFF3A28B2823EE530088DD67 /* ListsView.swift */,
+				FF3842E42CF96B5B0044A39E /* SettingsView.swift */,
 				FF8B8EF4285E240A0033C4BD /* ListItemView.swift */,
 				FF317E3B286C7E3300DC2335 /* CircularProgressView.swift */,
 				FF1D0D852844331200C710B1 /* ListEditorView.swift */,
@@ -564,7 +579,9 @@
 				FFE726E728575C770018B9D7 /* RelistApp.swift in Sources */,
 				FF8B8EF7285E240A0033C4BD /* ListItemView.swift in Sources */,
 				FFE726E828575C770018B9D7 /* RoutineList+CoreDataProperties.swift in Sources */,
+				FF3842E82CF96B5B0044A39E /* SettingsView.swift in Sources */,
 				FFE726E928575C770018B9D7 /* RoutineTask+CoreDataClass.swift in Sources */,
+				FF3842EC2CF979DA0044A39E /* SettingsManager.swift in Sources */,
 				FFE726EA28575C770018B9D7 /* Persistence.swift in Sources */,
 				FF06C33629D70F4B0095AEDE /* AnimatedSeparatorView.swift in Sources */,
 				FFE726EB28575C770018B9D7 /* TasksView.swift in Sources */,
@@ -588,7 +605,9 @@
 				FFE726FD28575E260018B9D7 /* RelistApp.swift in Sources */,
 				FF8B8EF8285E240A0033C4BD /* ListItemView.swift in Sources */,
 				FFE726FE28575E260018B9D7 /* RoutineList+CoreDataProperties.swift in Sources */,
+				FF3842E92CF96B5B0044A39E /* SettingsView.swift in Sources */,
 				FFE726FF28575E260018B9D7 /* RoutineTask+CoreDataClass.swift in Sources */,
+				FF3842EE2CF979DA0044A39E /* SettingsManager.swift in Sources */,
 				FFE7270028575E260018B9D7 /* Persistence.swift in Sources */,
 				FF06C33729D70F4B0095AEDE /* AnimatedSeparatorView.swift in Sources */,
 				FFE7270128575E260018B9D7 /* TasksView.swift in Sources */,
@@ -612,7 +631,9 @@
 				FFF3A2B52823EE550088DD67 /* RelistApp.swift in Sources */,
 				FF8B8EF5285E240A0033C4BD /* ListItemView.swift in Sources */,
 				FF4E23802843CFBD0028EF88 /* RoutineList+CoreDataProperties.swift in Sources */,
+				FF3842E52CF96B5B0044A39E /* SettingsView.swift in Sources */,
 				FF4E237A2843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift in Sources */,
+				FF3842EB2CF979DA0044A39E /* SettingsManager.swift in Sources */,
 				FFF3A2B92823EE550088DD67 /* Persistence.swift in Sources */,
 				FF06C33429D70F4B0095AEDE /* AnimatedSeparatorView.swift in Sources */,
 				FF668078282D2FCD00C52CCE /* TasksView.swift in Sources */,
@@ -636,7 +657,9 @@
 				FFF3A2B62823EE550088DD67 /* RelistApp.swift in Sources */,
 				FF8B8EF6285E240A0033C4BD /* ListItemView.swift in Sources */,
 				FF4E23812843CFBD0028EF88 /* RoutineList+CoreDataProperties.swift in Sources */,
+				FF3842E62CF96B5B0044A39E /* SettingsView.swift in Sources */,
 				FF4E237B2843CFBD0028EF88 /* RoutineTask+CoreDataClass.swift in Sources */,
+				FF3842EF2CF979DA0044A39E /* SettingsManager.swift in Sources */,
 				FFF3A2BA2823EE550088DD67 /* Persistence.swift in Sources */,
 				FF06C33529D70F4B0095AEDE /* AnimatedSeparatorView.swift in Sources */,
 				FF668079282D2FCD00C52CCE /* TasksView.swift in Sources */,
@@ -654,6 +677,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3842E72CF96B5B0044A39E /* SettingsView.swift in Sources */,
 				FFDF37FA29F4493400289812 /* Relist (iOS).entitlements in Sources */,
 				FFDF37E029F4488C00289812 /* RoutineTask+CoreDataClass.swift in Sources */,
 				FFDF37E129F4488C00289812 /* RoutineList+CoreDataClass.swift in Sources */,
@@ -674,6 +698,7 @@
 				FFDF37F729F4488C00289812 /* CloudKit.framework in Sources */,
 				FFF3A2A62823EE550088DD67 /* Tests_iOSLaunchTests.swift in Sources */,
 				FFDF37D929F43FB600289812 /* Persistence.swift in Sources */,
+				FF3842ED2CF979DA0044A39E /* SettingsManager.swift in Sources */,
 				FFF3A2A42823EE550088DD67 /* Tests_iOS.swift in Sources */,
 				FF90CD5E29296F4D001579DC /* Animation+instant.swift in Sources */,
 				FF9718FF29ED7C7000A4AF18 /* Color.swift in Sources */,
@@ -687,6 +712,7 @@
 				FFF3A2B22823EE550088DD67 /* Tests_macOSLaunchTests.swift in Sources */,
 				FF2C68242CF2B48A00B15E0B /* Bundle.swift in Sources */,
 				FFDF37DA29F43FB600289812 /* Persistence.swift in Sources */,
+				FF3842F02CF979DA0044A39E /* SettingsManager.swift in Sources */,
 				FFF3A2B02823EE550088DD67 /* Tests_macOS.swift in Sources */,
 				FF90CD5F29296F4D001579DC /* Animation+instant.swift in Sources */,
 				FF97190029ED7C7000A4AF18 /* Color.swift in Sources */,
@@ -743,6 +769,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "BETA DEBUG";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -778,6 +805,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = BETA;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -810,6 +838,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.uturnr.Relist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "BETA DEBUG";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -840,6 +869,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.uturnr.Relist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = BETA;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};

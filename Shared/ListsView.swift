@@ -33,14 +33,21 @@ struct ListsView: View {
           ListItemView(list: list)
         }
         .onDelete(perform: deleteLists)
-      }.environment(\.defaultMinListRowHeight, 80)
+      }
+      .navigationTitle("Lists")
+      .environment(\.defaultMinListRowHeight, 80)
         .toolbar {
-          #if os(iOS)
-            ToolbarItem(placement: .navigationBarTrailing) {
-              EditButton()
+          // There are no non-beta settings yet
+          #if BETA
+            ToolbarItem(placement: .navigationBarLeading) {
+              NavigationLink(destination: SettingsView()
+                .environment(\.managedObjectContext, self.viewContext)) {
+                Label("Settings", systemImage: "gearshape")
+              }
             }
           #endif
-          ToolbarItem {
+
+          ToolbarItem(placement: .navigationBarTrailing) {
             Button(action: showAddList) {
               Label("Add List", systemImage: "plus")
             }
@@ -49,6 +56,12 @@ struct ListsView: View {
                 .environment(\.managedObjectContext, self.viewContext)
             }
           }
+
+          #if os(iOS)
+            ToolbarItem(placement: .navigationBarTrailing) {
+              EditButton()
+            }
+          #endif
         }
       
       Text("Select a list")
