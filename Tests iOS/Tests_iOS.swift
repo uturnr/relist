@@ -19,7 +19,7 @@ class Tests_iOS: XCTestCase {
   /// debug mode doesn't exist yet so we are always in debug mode)
   /// ["Task 1", "Task 2"], ["0 - Test Task 1", "1 - Test Task 2"] => true
   private func assertVisibleTasksMatch(_ expectedTaskLabels: [String]) {
-    let visibleTaskLabels = app.collectionViews.cells.allElementsBoundByIndex
+    let visibleTaskLabels = app.collectionViews["tasksList"].cells.allElementsBoundByIndex
     .compactMap { cell in
         cell.staticTexts["taskName"].label
     }
@@ -85,7 +85,7 @@ class Tests_iOS: XCTestCase {
       = ["Task 5", "Task 4", "Task 3", "Task 2", "Task 1"]
     assertVisibleTasksMatch(expectedVisibleTasks)
 
-    navBar.buttons["Back"].tap()
+    navBar.buttons.firstMatch.tap()
     deleteTestList(named: testListName)
   }
   
@@ -145,7 +145,7 @@ class Tests_iOS: XCTestCase {
     expectedVisibleTasks.append(movedTask) // 4, 5, 3
     assertVisibleTasksMatch(expectedVisibleTasks)
     
-    navBar.buttons["Back"].tap()
+    navBar.buttons.firstMatch.tap()
     deleteTestList(named: testListName)
   }
   
