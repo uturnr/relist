@@ -3,14 +3,20 @@ import CoreData
 
 struct ListItemView: View {
   @Environment(\.managedObjectContext) private var viewContext
-  
+
   @ObservedObject var list: RoutineList
-  
-  init(list: RoutineList) {
+
+  var editList: () -> Void
+
+  init(
+    list: RoutineList,
+    editList: @escaping () -> Void
+  ) {
     self.list = list
+    self.editList = editList
   }
-  
-  
+
+
   var body: some View {
     NavigationLink {
       TasksView(list: list)
@@ -18,9 +24,10 @@ struct ListItemView: View {
     } label: {
       HStack {
         Text(list.name)
-        
+          .accessibilityIdentifier(list.name)
+
         Spacer()
-        
+
         if (list.taskCompletion > 0) {
           CircularProgressView(progress: list.taskCompletion)
             .frame(width: 15, height: 15)
@@ -28,28 +35,26 @@ struct ListItemView: View {
         }
       }
     }
+    .contextMenu {
+      Button(action: editList) {
+        Label("Edit", systemImage: "pencil")
+      }
+      .accessibilityIdentifier("editList")
+
+      Button(role: .destructive, action: {
+        ListsService.deleteLists([list])
+      }) {
+        Label("Delete", systemImage: "trash")
+      }
+    }
   }
 }
 
+/// Entire list previewed for a more accurate preview.
 struct ListItemView_Previews: PreviewProvider {
-  // TODO: use mock data from Persistence.swift
-  static let list = RoutineList(
-    context: PersistenceController.preview.container.viewContext,
-    name: "Test List",
-    orderIndex: 0
-  )
-  
   static var previews: some View {
-    let _ = RoutineTask(
-      context: PersistenceController.preview.container.viewContext,
-      list: list,
-      name: "Test Task",
-      orderIndex: 0
-    )
-    
-    TasksView(list: list).environment(
-      \.managedObjectContext,
-       PersistenceController.preview.container.viewContext
-    ).previewInterfaceOrientation(.portraitUpsideDown)
+    PreviewContainer {
+      ListsView()
+    }
   }
 }

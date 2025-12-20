@@ -11,8 +11,8 @@ jobs:
     runs-on: macos-15
 
     env:
-      IPHONE: "16"
-      IOS: "18.0"
+      IPHONE: "17"
+      IOS: "26.1"
 
     steps:
     - uses: actions/checkout@v4

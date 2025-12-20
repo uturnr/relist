@@ -2,7 +2,17 @@ import CoreData
 import SwiftUI
 
 struct PersistenceController {
-  static let shared = PersistenceController()
+  private static var _current: PersistenceController = .persistent
+  
+  /// Use `current` globally to access the correct persistence controller.
+  /// Normally this would be the `persistent` controller, but in tests, it
+  ///should be the `preview` controller.
+  static var current: PersistenceController {
+    get { _current }
+    set { _current = newValue }
+  }
+  
+  static let persistent = PersistenceController()
   
   static func setupMockList(_ viewContext: NSManagedObjectContext) {
     let list = RoutineList(
@@ -61,9 +71,10 @@ struct PersistenceController {
     }
   }
   
-  static func getPreviewList(_ viewContext: NSManagedObjectContext) -> RoutineList {
+  static func getPreviewList() -> RoutineList {
     let request: NSFetchRequest<RoutineList> = RoutineList.fetchRequest()
-
+    let viewContext = preview.container.viewContext
+    
     let lists = try! viewContext.fetch(request)
     return lists[0]
   }
@@ -84,6 +95,9 @@ struct PersistenceController {
     if inMemory {
       container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
     }
+
+    container.viewContext.undoManager = UndoManager()
+
     container.loadPersistentStores(completionHandler: { (storeDescription, error) in
       if let error = error as NSError? {
         // Replace this implementation with code to handle the error appropriately.

@@ -27,6 +27,6 @@ struct CircularProgressView: View {
 
 struct CircularProgressView_Previews: PreviewProvider {
   static var previews: some View {
-    CircularProgressView(progress: 0.33).previewInterfaceOrientation(.portraitUpsideDown)
+    CircularProgressView(progress: 0.33)
   }
 }
