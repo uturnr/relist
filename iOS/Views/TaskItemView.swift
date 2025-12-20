@@ -45,16 +45,20 @@ struct TaskItemView: View {
   @Binding var animationStarted: TimeInterval
   var showCompleted: Bool
   
+  var editTask: () -> Void
+  
   init(
     task: RoutineTask,
     completingTaskIDs: Binding<[String]>,
     animationStarted: Binding<TimeInterval>,
-    showCompleted: Bool
+    showCompleted: Bool,
+    editTask: @escaping () -> Void
   ) {
     self.task = task
     self._completingTaskIDs = completingTaskIDs
     self._animationStarted = animationStarted
     self.showCompleted = showCompleted
+    self.editTask = editTask
   }
   
   var body: some View {
@@ -117,6 +121,18 @@ struct TaskItemView: View {
     .transaction { transaction in
       transaction.animation = nil
     }
+    .contextMenu {
+      Button(action: editTask) {
+        Label("Edit", systemImage: "pencil")
+      }
+      .accessibilityIdentifier("editTask")
+
+      Button(role: .destructive, action: {
+        TasksService.deleteTasks([task])
+      }) {
+        Label("Delete", systemImage: "trash")
+      }
+    }
   }
   
   private func toggleTaskChecked(task: RoutineTask) {
@@ -141,19 +157,15 @@ struct TaskItemView: View {
   }
 }
 
+/// Entire list previewed for a more accurate preview.
 struct TaskItemView_Previews: PreviewProvider {
   static var previews: some View {
-    let list = PersistenceController.getPreviewList(
-      PersistenceController.preview.container.viewContext
-    )
-    
     if #available(iOS 16.0, *) {
-      NavigationStack {
-        TasksView(list: list).environment(
-          \.managedObjectContext,
-          PersistenceController.preview.container.viewContext
-        )
-      }.previewInterfaceOrientation(.portraitUpsideDown)
+      PreviewContainer {
+        NavigationStack {
+          TasksView(list: PersistenceController.getPreviewList())
+        }
+      }
     } else {
       Text("Preview requires iOS 16")
     }

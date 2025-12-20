@@ -7,7 +7,14 @@ struct ListEditorView: View {
   
   @FocusState var nameFieldFocused: Bool
 
-  @State private var name = ""
+  @State private var name: String
+  
+  var list: RoutineList?
+  
+  init(list: RoutineList? = nil) {
+    self.list = list
+    _name = State(initialValue: list?.name ?? "")
+  }
   
   var body: some View {
     NavigationView {
@@ -21,28 +28,32 @@ struct ListEditorView: View {
               }
             }
             .onSubmit { // Used for enter key support.
-              self.addList(name: self.name)
+              self.saveList()
             }
         }
         
-        Button("Add List") {
-          self.addList(name: self.name)
+        Button(list == nil ? "Add List" : "Save List") {
+          self.saveList()
         }
         .keyboardShortcut(.defaultAction)
       }
       #if os(iOS)
-        .navigationBarTitle("New List")
+        .navigationBarTitle(list == nil ? "New List" : "Edit List")
       #endif
     }
   }
   
-  private func addList(name: String) {
+  private func saveList() {
     withAnimation {
-      let _ = RoutineList(
-        context: viewContext,
-        name: name,
-        orderIndex: 0
-      )
+      if let existingList = list {
+        existingList.name = name
+      } else {
+        let _ = RoutineList(
+          context: viewContext,
+          name: name,
+          orderIndex: 0
+        )
+      }
       
       do {
         try viewContext.save()
@@ -59,9 +70,8 @@ struct ListEditorView: View {
 
 struct ListEditorView_Previews: PreviewProvider {
   static var previews: some View {
-    ListEditorView().environment(
-      \.managedObjectContext,
-       PersistenceController.preview.container.viewContext
-    ).previewInterfaceOrientation(.portraitUpsideDown)
+    PreviewContainer {
+      ListEditorView()
+    }
   }
 }

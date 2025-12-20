@@ -2,35 +2,46 @@ import SwiftUI
 
 @main
 struct RelistApp: App {
-  let persistenceController: PersistenceController
   @StateObject private var settingsManager = SettingsManager()
   
   init() {
     // Handle UI test automation settings
-    if UserDefaults.standard.bool(forKey: "DISABLE_ANIMATIONS") {
-      UIView.setAnimationsEnabled(false)
-      let scenes = UIApplication.shared.connectedScenes
-      let windowScene = scenes.first as? UIWindowScene
-      windowScene?.windows.first?.layer.speed = 100
-    }
+    #if os(iOS)
+      if UserDefaults.standard.bool(forKey: "DISABLE_ANIMATIONS") {
+        UIView.setAnimationsEnabled(false)
+        let scenes = UIApplication.shared.connectedScenes
+        let windowScene = scenes.first as? UIWindowScene
+        windowScene?.windows.first?.layer.speed = 100
+      }
+    #endif
 
     // Initialize persistenceController based on settings
-    persistenceController = UserDefaults.standard.bool(
+    PersistenceController.current = UserDefaults.standard.bool(
       forKey: "USE_PREVIEW_DATA"
     ) 
       ? .preview 
-      : .shared
+      : .persistent
   }
   
   var body: some Scene {
     WindowGroup {
-      ListsView()
-      .environment(
-        \.managedObjectContext,
-         persistenceController.container.viewContext
-      )
-      .environmentObject(settingsManager)
-      .accentColor(.blue)
+      #if os(iOS)
+        ListsView()
+          .environment(
+            \.managedObjectContext,
+             PersistenceController.current.container.viewContext
+          )
+          .environmentObject(settingsManager)
+          .accentColor(.blue)
+      #else
+        ListsViewMac()
+          .environment(
+            \.managedObjectContext,
+             PersistenceController.current.container.viewContext
+          )
+          .environmentObject(settingsManager)
+          .accentColor(.blue)
+      #endif
     }
   }
 }
