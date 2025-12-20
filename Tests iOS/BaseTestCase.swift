@@ -43,44 +43,35 @@ class BaseTestCase: XCTestCase {
     }
   }
 
-  func openTestList(named testListName: String) {
+  /// Finds a list cell in the sidebar by name, waiting for it to appear.
+  /// Returns the last matching cell if duplicates exist.
+  func findListCell(named listName: String, timeout: TimeInterval = 5) -> XCUIElement {
     let sidebarCollectionView = app.collectionViews["Sidebar"]
+    let listCellQuery = sidebarCollectionView.cells
+      .containing(.staticText, identifier: listName)
 
-    // Wait for the list to appear in the sidebar
-    let testListCell = sidebarCollectionView.cells
-      .containing(.staticText, identifier: testListName)
+    let exists = listCellQuery.firstMatch.waitForExistence(timeout: timeout)
+    XCTAssertTrue(exists, "List '\(listName)' should exist in sidebar")
 
-    // Wait for at least one matching cell to exist
-    let exists = testListCell.firstMatch.waitForExistence(timeout: 5)
-    XCTAssertTrue(exists, "List '\(testListName)' should exist in sidebar")
-
-    // Get the last matching cell (in case there are duplicates)
-    let matchingCells = testListCell.allElementsBoundByIndex
-    guard let cellToTap = matchingCells.last else {
-      XCTFail("Could not find list cell with name '\(testListName)'")
-      return
+    let matchingCells = listCellQuery.allElementsBoundByIndex
+    guard let cell = matchingCells.last else {
+      XCTFail("Could not find list cell with name '\(listName)'")
+      // Return firstMatch as fallback to prevent crash
+      return listCellQuery.firstMatch
     }
 
-    cellToTap.tap()
+    return cell
+  }
+
+  func openTestList(named testListName: String) {
+    let cell = findListCell(named: testListName)
+    cell.tap()
   }
 
   func deleteTestList(named testListName: String) {
     let sidebarCollectionView = app.collectionViews["Sidebar"]
-    let testListCell = sidebarCollectionView.cells
-      .containing(.staticText, identifier: testListName)
-
-    // Wait for the list to appear in the sidebar
-    let exists = testListCell.firstMatch.waitForExistence(timeout: 5)
-    XCTAssertTrue(exists, "List '\(testListName)' should exist in sidebar")
-
-    // Get the last matching cell (in case there are duplicates)
-    let matchingCells = testListCell.allElementsBoundByIndex
-    guard let cellToDelete = matchingCells.last else {
-      XCTFail("Could not find list cell with name '\(testListName)'")
-      return
-    }
-
-    cellToDelete.swipeLeft()
+    let cell = findListCell(named: testListName)
+    cell.swipeLeft()
     sidebarCollectionView.buttons["Delete"].tap()
   }
 }
