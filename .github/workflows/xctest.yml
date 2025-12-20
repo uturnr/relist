@@ -12,7 +12,7 @@ jobs:
 
     env:
       IPHONE: "17"
-      IOS: "26.0"
+      IOS: "26.1"
 
     steps:
     - uses: actions/checkout@v4
